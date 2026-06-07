@@ -85,8 +85,8 @@ const ACCENT2 = { r: 255, g: 107, b: 53  };
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function Hero() {
-  const canvasRef    = useRef(null);
-  const spotlightRef = useRef(null);
+  const canvasRef    = useRef<HTMLCanvasElement>(null);
+  const spotlightRef = useRef<HTMLDivElement>(null);
 
   // Canvas + spotlight animation
   useEffect(() => {
@@ -94,16 +94,33 @@ export default function Hero() {
     const spotlight = spotlightRef.current;
     if (!canvas || !spotlight) return;
 
-    const ctx = canvas.getContext('2d');
-    let W, H, cols, rows, dots = [];
-    let mouse       = { x: -9999, y: -9999 };
-    let targetMouse = { x: -9999, y: -9999 };
-    let ripples     = [];
-    let rafId;
+    const ctx = canvas.getContext('2d')!;
+
+    let W: number, H: number, cols: number, rows: number;
+
+    interface Dot {
+      ox: number; oy: number;
+      x:  number; y:  number;
+      vx: number; vy: number;
+      size:  number;
+      alpha: number;
+    }
+
+    interface Ripple {
+      x: number; y: number;
+      r: number; maxR: number;
+      alpha: number; speed: number;
+    }
+
+    let dots: Dot[]     = [];
+    let mouse           = { x: -9999, y: -9999 };
+    let targetMouse     = { x: -9999, y: -9999 };
+    let ripples: Ripple[] = [];
+    let rafId: number;
 
     function resize() {
-      W = canvas.width  = window.innerWidth;
-      H = canvas.height = window.innerHeight;
+      W = canvas!.width  = window.innerWidth;
+      H = canvas!.height = window.innerHeight;
       buildGrid();
     }
 
@@ -129,7 +146,7 @@ export default function Hero() {
       mouse.y += (targetMouse.y - mouse.y) * 0.1;
     }
 
-    function spawnRipple(x, y) {
+    function spawnRipple(x: number, y: number) {
       ripples.push({ x, y, r: 0, maxR: INFLUENCE_RADIUS * 1.6, alpha: 0.5, speed: 3.5 });
     }
 
@@ -155,7 +172,7 @@ export default function Hero() {
           const d  = dots[r * cols + c];
           const dr = dots[(r + 1) * cols + c];
           const dc = dots[r * cols + c + 1];
-          const distH   = Math.hypot(d.x - mouse.x, d.y - mouse.y);
+          const distH     = Math.hypot(d.x - mouse.x, d.y - mouse.y);
           const lineAlpha = Math.max(0, 0.06 - (distH / INFLUENCE_RADIUS) * 0.04);
           if (lineAlpha > 0.005) {
             ctx.strokeStyle = `rgba(0,212,255,${lineAlpha})`;
@@ -210,7 +227,7 @@ export default function Hero() {
       rafId = requestAnimationFrame(draw);
     }
 
-    function onMouseMove(e) {
+    function onMouseMove(e: MouseEvent) {
       targetMouse.x = e.clientX;
       targetMouse.y = e.clientY;
       if (spotlight) {
@@ -219,7 +236,7 @@ export default function Hero() {
       }
     }
 
-    function onClick(e) {
+    function onClick(e: MouseEvent) {
       spawnRipple(e.clientX, e.clientY);
       for (let i = 0; i < 3; i++) {
         setTimeout(() => spawnRipple(
@@ -242,6 +259,7 @@ export default function Hero() {
       window.removeEventListener('resize', resize);
     };
   }, []);
+
 
   return (
     <div className={styles.root}>
