@@ -113,8 +113,8 @@ export default function Hero() {
     }
 
     let dots: Dot[]     = [];
-    let mouse           = { x: -9999, y: -9999 };
-    let targetMouse     = { x: -9999, y: -9999 };
+    const mouse           = { x: -9999, y: -9999 };
+    const targetMouse     = { x: -9999, y: -9999 };
     let ripples: Ripple[] = [];
     let rafId: number;
 
