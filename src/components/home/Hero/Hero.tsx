@@ -5,8 +5,6 @@ import Link from 'next/link';
 import styles from './Hero.module.css';
 
 // ── Data ──────────────────────────────────────────────────────────────────────
-const NAV_LINKS = ['Companies', 'About', 'Careers', 'Contact'];
-
 const STATS = [
   { num: '6', suffix: '+',  label: 'Sectors' },
   { num: '20', suffix: '+', label: 'Years Active' },
@@ -32,7 +30,7 @@ const COMPANIES = [
   },
   {
     id: 'dist',
-    icon: '📦',
+    icon: '💻',
     chip: 'Distribution',
     name: <>Nutech<br />Distribution</>,
     sub: 'Computer Hardware & Consumer Goods',
@@ -56,7 +54,7 @@ const COMPANIES = [
   },
   {
     id: 'tech',
-    icon: '💻',
+    icon: '✨',
     chip: 'Technology',
     name: <>Nutech<br />Technologies</>,
     sub: 'Software Development, Cloud Solutions & AI',
@@ -271,21 +269,6 @@ export default function Hero() {
         {/* Glow blobs */}
         <div className={`${styles.blob} ${styles.blob1}`} />
         <div className={`${styles.blob} ${styles.blob2}`} />
-
-        {/* ── Navbar ── */}
-        <nav className={styles.nav}>
-          <div className={styles.logo}>
-            NUTECH<span className={styles.logoAccent}>.</span>
-          </div>
-          <ul className={styles.navList}>
-            {NAV_LINKS.map(link => (
-              <li key={link}>
-                <Link href="#">{link}</Link>
-              </li>
-            ))}
-          </ul>
-          <button className={styles.navCta}>Investor Relations</button>
-        </nav>
 
         {/* ── Hero ── */}
         <section className={styles.hero}>

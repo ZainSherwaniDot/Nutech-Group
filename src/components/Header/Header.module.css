@@ -1,5 +1,64 @@
-/* .mainHeader{
-    background: var(--background);
-    color: var(--foreground);
-    z-index: 11;
-} */
+.mainHeader{
+    --bg: #080c10;
+    --border: rgba(255, 255, 255, 0.07);
+    --accent: #00d4ff;
+    --text: #e8edf2;
+    --muted: #5a6a7a;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* ── NAVBAR ── */
+.nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+  border-bottom: 1px solid var(--border);
+  animation: fadeDown 0.6s ease both;
+}
+.logo { border-radius: 25px }
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+}
+.navList li a {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navList li a:hover {
+  color: var(--accent);
+}
+.navCta {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 20px;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.navCta:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .nav  { padding: 20px 30px; }
+  .navList { display: none; }
+}

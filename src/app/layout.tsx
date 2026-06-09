@@ -47,9 +47,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${bebasNeue.variable} ${dmSans.variable} ${dmMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full">
         <Header />
-        <main>{children}</main>
+        <main className="mainGlobal">{children}</main>
         <Footer />
       </body>
     </html>
