@@ -315,7 +315,7 @@ export default function Hero() {
                   <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                 </svg>
               </button>
-              <button className={styles.btnGhost}>Talk to an Expert →</button>
+              <button className={styles.btnSecondary}>Talk to an Expert →</button>
             </div>
 
             <div className={styles.stats}>

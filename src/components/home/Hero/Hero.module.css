@@ -207,7 +207,7 @@
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
 }
 
-.btnGhost {
+.btnSecondary {
   font-size: 13px;
   letter-spacing: 1px;
   color: var(--muted);
@@ -219,7 +219,7 @@
   transition: color 0.2s;
   font-family: 'DM Sans', sans-serif;
 }
-.btnGhost:hover {
+.btnSecondary:hover {
   color: var(--text);
 }
 
