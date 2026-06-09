@@ -256,8 +256,8 @@
 }
 
 .companyCard {
-  background: rgba(255, 255, 255, 0.04);
-  /* background: #0d171f; */
+  /* background: rgba(255, 255, 255, 0.04); */
+  background: #0d171f;
   -webkit-backdrop-filter: blur(108px) saturate(210%);
   backdrop-filter: blur(108px) saturate(210%);
   border: 1px solid rgba(255, 255, 255, 0.1);
