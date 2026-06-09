@@ -26,7 +26,7 @@ const COMPANIES = [
     id: 'solar',
     icon: '☀️',
     chip: 'Energy',
-    name: <>Solar &amp;<br />Power</>,
+    name: <>Nutech<br />Solar &amp; Power</>,
     sub: 'Renewable Energy Solutions',
     cardClass: styles.cardSolar,
   },
