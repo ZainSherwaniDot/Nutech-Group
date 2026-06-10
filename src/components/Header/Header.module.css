@@ -1,12 +1,12 @@
 .mainHeader{
-    --bg: #080c10;
-    --border: rgba(255, 255, 255, 0.07);
-    --accent: #00d4ff;
-    --text: #e8edf2;
-    --muted: #5a6a7a;
-    font-family: 'DM Sans', sans-serif;
-    background: var(--bg);
-    color: var(--text);
+  --bg: #080c10;
+  --border: rgba(255, 255, 255, 0.07);
+  --accent: #00d4ff;
+  --text: #e8edf2;
+  --muted: #5a6a7a;
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
 /* ── NAVBAR ── */
