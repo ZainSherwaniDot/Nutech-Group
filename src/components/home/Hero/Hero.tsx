@@ -19,6 +19,7 @@ const COMPANIES = [
     name: <>Nutech<br />Automotive</>,
     sub: 'Tools, Parts & Service Excellence',
     cardClass: styles.cardAuto,
+    hrefLink: "/companies/nutech-automotive",
   },
   {
     id: 'solar',
@@ -27,6 +28,7 @@ const COMPANIES = [
     name: <>Nutech<br />Solar &amp; Power</>,
     sub: 'Renewable Energy Solutions',
     cardClass: styles.cardSolar,
+    hrefLink: "/companies/nutech-solar",
   },
   {
     id: 'dist',
@@ -35,6 +37,7 @@ const COMPANIES = [
     name: <>Nutech<br />Distribution</>,
     sub: 'Computer Hardware & Consumer Goods',
     cardClass: styles.cardDist,
+    hrefLink: "/companies/nutech-distribution",
   },
   {
     id: 'logi',
@@ -43,6 +46,7 @@ const COMPANIES = [
     name: <>Nutech<br />Logistics</>,
     sub: 'Shipping, Exporting & Customs',
     cardClass: styles.cardLogi,
+    hrefLink: "/companies/nutech-logistics",
   },
   {
     id: 'tele',
@@ -51,6 +55,7 @@ const COMPANIES = [
     name: <>Nutech<br />Telecom</>,
     sub: 'Connectivity & Telecommunication Infrastructure',
     cardClass: styles.cardTele,
+    hrefLink: "/companies/nutech-telecom",
   },
   {
     id: 'tech',
@@ -59,6 +64,7 @@ const COMPANIES = [
     name: <>Nutech<br />Technologies</>,
     sub: 'Software Development, Cloud Solutions & AI',
     cardClass: styles.cardTech,
+    hrefLink: "/companies/nutech-technologies",
   },
 ];
 
@@ -292,12 +298,14 @@ export default function Hero() {
             </p>
 
             <div className={styles.heroActions}>
-              <button className={styles.btnPrimary}>
-                Explore Our Group
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
-                  <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-              </button>
+              <Link href={"/companies"}>
+                <button className={styles.btnPrimary}>
+                  Explore Our Group
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
+                    <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </button>
+              </Link>
               <button className={styles.btnSecondary}>Talk to an Expert →</button>
             </div>
 
@@ -315,10 +323,10 @@ export default function Hero() {
 
           {/* RIGHT – Company Cards */}
           <div className={styles.heroRight}>
-            {COMPANIES.map(({ id, icon, chip, name, sub, cardClass }) => (
+            {COMPANIES.map(({ id, icon, chip, name, sub, cardClass, hrefLink }) => (
               <Link
                 key={id}
-                href="#"
+                href={hrefLink}
                 className={`${styles.companyCard} ${cardClass}`}
               >
                 <span className={styles.cardIcon}>{icon}</span>

@@ -19,7 +19,7 @@ export default function Header() {
               <li><Link href="/companies/nutech-telecom">Nutech Telecom</Link></li>
               <li><Link href="/companies/nutech-solar">Nutech Solar & Power</Link></li>
               <li><Link href="/companies/nutech-logistics">Nutech Logistics</Link></li>
-              <li><Link href="/companies/nutech-techonologies">Nutech Techonologies</Link></li>
+              <li><Link href="/companies/nutech-technologies">Nutech Technologies</Link></li>
             </ul>
           </li>
           <li><Link href="/vendors">Vendors</Link></li>
