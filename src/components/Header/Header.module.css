@@ -1,9 +1,4 @@
 .mainHeader{
-  --bg: #080c10;
-  --border: rgba(255, 255, 255, 0.07);
-  --accent: #00d4ff;
-  --text: #e8edf2;
-  --muted: #5a6a7a;
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -35,10 +30,66 @@
   text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: var(--transition-main);
 }
-.navList li a:hover {
+.navList:has(>li>a:hover){
+  &>li>a:hover{
+    color: var(--accent);
+    transition: var(--transition-main);
+  }
+  &>li>a:not(:hover){
+    opacity: 0.5;
+    transition: var(--transition-main);
+  }
+}
+.navList:has(.dropdown:hover)>li:not(.dropdown){
+  opacity: 0;
+  transition: var(--transition-main);
+}
+.navList li{
+  transition: var(--transition-main);
+}
+.dropdown{
+  position: relative;
+}
+.submenu{
+  z-index: -1;
+  position: absolute;
+  width: max-content;
+  border: var(--borderDarkPop);
+  border-top: none;
+  background-color: var(--bgDarkPop);
+  border-radius: 0 0 15px 15px;
+  padding: 5px 10px;
+  top: 17px;
+  translate: -10px 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
+  /* opacity: 0; */
+  /* transition: var(--transition-main); */
+}
+.dropdown:hover .submenu{
+  /* opacity: 1; */
+  display: block;
+  /* transition: var(--transition-main); */
+  height: 160px;
+  animation: subMenuBounce 0.5s ease;
+}
+@keyframes subMenuBounce {
+  0%{
+    height: 0;
+  }
+  60%{
+    height: 175px;
+  }
+  100%{
+    height: 160px;
+  }
+}
+.submenu a:hover{
   color: var(--accent);
+  transition: var(--transition-main);
 }
 .navCta {
   font-family: 'DM Mono', monospace;

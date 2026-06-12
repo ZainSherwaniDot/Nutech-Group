@@ -1,15 +1,3 @@
-/* ── Reset & Root Variables ── */
-.root {
-  --bg: #080c10;
-  --surface: #0d1219;
-  --border: rgba(255, 255, 255, 0.07);
-  --accent: #00d4ff;
-  --accent2: #ff6b35;
-  --text: #e8edf2;
-  --muted: #5a6a7a;
-  --card-bg: rgba(255, 255, 255, 0.03);
-}
-
 /* ── Page Wrapper ── */
 .pageWrapper {
   background: var(--bg);
@@ -201,10 +189,10 @@
 
 .companyCard {
   /* background: rgba(255, 255, 255, 0.04); */
-  background: #0d171f;
+  background: var(--bgDarkPop);
   /* -webkit-backdrop-filter: blur(108px) saturate(210%);
   backdrop-filter: blur(108px) saturate(210%); */
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: var(--borderDarkPop);
   border-radius: 12px;
   padding: 26px 22px;
   position: relative;
