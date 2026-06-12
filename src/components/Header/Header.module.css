@@ -106,6 +106,7 @@
 .navCta:hover {
   background: var(--accent);
   color: var(--bg);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
 }
 
 /* ── Responsive ── */

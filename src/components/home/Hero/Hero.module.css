@@ -137,6 +137,13 @@
 }
 .btnPrimary:hover {
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+  &>svg{
+    transition: translate 0.1s;
+    translate: 5px 0;
+  }
+}
+.btnPrimary>svg{
+  transition: translate 0.1s;
 }
 
 .btnSecondary {
