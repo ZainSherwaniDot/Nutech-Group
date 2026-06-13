@@ -32,7 +32,7 @@ const COMPANIES = [
   },
   {
     id: 'dist',
-    icon: '💻',
+    icon: '📦',
     chip: 'Distribution',
     name: <>Nutech<br />Distribution</>,
     sub: 'Computer Hardware & Consumer Goods',
@@ -59,7 +59,7 @@ const COMPANIES = [
   },
   {
     id: 'tech',
-    icon: '✨',
+    icon: '💻',
     chip: 'Technology',
     name: <>Nutech<br />Technologies</>,
     sub: 'Software Development, Cloud Solutions & AI',

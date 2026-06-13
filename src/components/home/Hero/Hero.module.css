@@ -291,20 +291,20 @@
 }
 
 /* Card accent colours */
-.cardAuto  { --card-accent: #00d4ff; --card-glow: rgba(0, 212, 255, 0.07); }
+.cardAuto  { --card-accent: #e53935; --card-glow: rgba(229, 57, 53, 0.07); }
 .cardSolar { --card-accent: #f5a623; --card-glow: rgba(245, 166, 35, 0.07); }
 .cardDist  { --card-accent: #7ed321; --card-glow: rgba(126, 211, 33, 0.07); }
 .cardLogi  { --card-accent: #ff6b35; --card-glow: rgba(255, 107, 53, 0.07); }
 .cardTele  { --card-accent: #bd10e0; --card-glow: rgba(189, 16, 224, 0.07); }
-.cardTech  { --card-accent: #4a90e2; --card-glow: rgba(74, 144, 226, 0.07); }
+.cardTech  { --card-accent: #14b8a6; --card-glow: rgba(20, 184, 166, 0.07); }
 
 /* Chip colours */
-.cardAuto  .chip { background: rgba(0, 212, 255, 0.12);  color: #00d4ff; }
+.cardAuto  .chip { background: rgba(229, 57, 53, 0.12); color: #e53935; }
 .cardSolar .chip { background: rgba(245, 166, 35, 0.12); color: #f5a623; }
 .cardDist  .chip { background: rgba(126, 211, 33, 0.12); color: #7ed321; }
 .cardLogi  .chip { background: rgba(255, 107, 53, 0.12); color: #ff6b35; }
 .cardTele  .chip { background: rgba(189, 16, 224, 0.12); color: #bd10e0; }
-.cardTech  .chip { background: rgba(74, 144, 226, 0.12); color: #4a90e2; }
+.cardTech  .chip { background: rgba(20, 184, 166, 0.12); color: #14b8a6; }
 
 .chip {
   display: inline-block;
