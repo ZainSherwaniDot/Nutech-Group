@@ -15,10 +15,10 @@ export default function Header() {
             <Link className={styles.linkOfSubmenu} href="/companies">Companies</Link>
             <ul className={styles.submenu}>
               <li><Link href="/companies/nutech-automotive">Nutech Automotive</Link></li>
-              <li><Link href="/companies/nutech-distribution">Nutech Distribution</Link></li>
-              <li><Link href="/companies/nutech-telecom">Nutech Telecom</Link></li>
               <li><Link href="/companies/nutech-solar">Nutech Solar & Power</Link></li>
+              <li><Link href="/companies/nutech-distribution">Nutech Distribution</Link></li>
               <li><Link href="/companies/nutech-logistics">Nutech Logistics</Link></li>
+              <li><Link href="/companies/nutech-telecom">Nutech Telecom</Link></li>
               <li><Link href="/companies/nutech-technologies">Nutech Technologies</Link></li>
             </ul>
           </li>
