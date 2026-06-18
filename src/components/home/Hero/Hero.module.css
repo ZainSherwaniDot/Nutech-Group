@@ -162,29 +162,53 @@
   color: var(--text);
 }
 
-.stats {
+.contactDetails {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 64px;
   padding-top: 40px;
   border-top: 1px solid var(--border);
+  & svg{
+    transition: var(--transition-main);
+    /* color: var(--muted); */
+  }
+  & a:hover{
+    & svg{
+      color: var(--accent);
+    }
+  }
 }
-.statNum {
+.emailAndPhone {
+  display: flex;
+  gap: 10px;
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;
+  font-size: 23px;
   line-height: 1;
   color: var(--text);
+  transition: var(--transition-main);
+  &:hover{
+    color: var(--accent);
+  }
 }
-.statNum span {
+.emailAndPhone span {
   color: var(--accent);
 }
-.statLabel {
+.socials{
+  display: flex;
+  gap: 10px;
+  /* background: var(--muted);
+  border-radius: 1000px;
+  width: fit-content;
+  padding: 5px 25px; */
+}
+/* .statLabel {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: var(--muted);
   margin-top: 4px;
-}
+} */
 
 /* RIGHT SIDE – Company Cards */
 .heroRight {

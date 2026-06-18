@@ -3,13 +3,15 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import styles from './Hero.module.css';
+import { FaInstagram, FaLinkedin, FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 // ── Data ──────────────────────────────────────────────────────────────────────
-const STATS = [
-  { num: '6', suffix: '+',  label: 'Sectors' },
-  { num: '20', suffix: '+', label: 'Years Active' },
-  { num: '1',  suffix: 'K+', label: 'Employees' },
-];
+// const STATS = [
+//   { num: '6', suffix: '+',  label: 'Sectors' },
+//   { num: '20', suffix: '+', label: 'Years Active' },
+//   { num: '1',  suffix: 'K+', label: 'Employees' },
+// ];
 
 const COMPANIES = [
   {
@@ -292,9 +294,9 @@ export default function Hero() {
             </h1>
 
             <p className={styles.heroDesc}>
-              Nutech Group operates six industry-defining companies across automotive,
-              energy, distribution, logistics, telecom, and technology — driving growth
-              across the MEA region with diversified excellence.
+              Nutech Group operates six industry-defining companies
+              {/* across automotive, energy, distribution, logistics, telecom, and technology */}
+              — driving growth across the MEA region with diversified excellence.
             </p>
 
             <div className={styles.heroActions}>
@@ -309,15 +311,30 @@ export default function Hero() {
               <button className={styles.btnSecondary}>Talk to an Expert →</button>
             </div>
 
-            <div className={styles.stats}>
-              {STATS.map(({ num, suffix, label }) => (
+            <div className={styles.contactDetails}>
+              {/* {STATS.map(({ num, suffix, label }) => (
                 <div key={label}>
-                  <div className={styles.statNum}>
+                  <div className={styles.emailAndPhone}>
                     {num}<span>{suffix}</span>
                   </div>
                   <div className={styles.statLabel}>{label}</div>
                 </div>
-              ))}
+              ))} */}
+              <Link href={"mailto:info@nutech-group.com"} target="_blank" rel="noopener noreferrer">
+                <div className={styles.emailAndPhone}>
+                  <span><MdEmail /></span>info@nutech-group.com
+                </div>
+              </Link>
+              <Link href={"tel:+971555183349"} target="_blank" rel="noopener noreferrer">
+                <div className={styles.emailAndPhone}>
+                  <span><FaPhoneAlt /></span>+971555183349
+                </div>
+              </Link>
+              <div className={styles.socials}>
+                <Link href="https://www.facebook.com/profile.php?id=61573981977505" target="_blank" rel="noopener noreferrer"><FaFacebook size={23} /></Link>
+                <Link href="https://www.instagram.com/nutechgroupllc/" target="_blank" rel="noopener noreferrer"><FaInstagram size={23} /></Link>
+                <Link href="https://www.linkedin.com/company/nutechgroup/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={23} /></Link>
+              </div>
             </div>
           </div>
 
