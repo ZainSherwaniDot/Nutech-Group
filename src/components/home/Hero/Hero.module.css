@@ -341,39 +341,6 @@
   margin-bottom: 10px;
 }
 
-/* ── TICKER ── */
-.tickerWrap {
-  position: relative;
-  z-index: 5;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  overflow: hidden;
-  padding: 14px 0;
-  animation: fadeUp 0.8s 0.8s ease both;
-}
-.tickerTrack {
-  display: flex;
-  gap: 60px;
-  white-space: nowrap;
-  animation: ticker 28s linear infinite;
-  width: max-content;
-}
-.tickerItem {
-  font-family: 'DM Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.tickerItem::before {
-  content: '◆';
-  color: var(--accent);
-  font-size: 6px;
-}
-
 /* ── INTERACTIVE CANVAS ── */
 .bgCanvas {
   position: fixed;
@@ -404,10 +371,6 @@
 @keyframes fadeDown {
   from { opacity: 0; transform: translateY(-20px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
 }
 
 /* ── Responsive ── */

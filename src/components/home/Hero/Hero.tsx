@@ -70,16 +70,6 @@ const COMPANIES = [
   },
 ];
 
-const TICKER_ITEMS = [
-  'Nutech Automotive',
-  'Nutech Solar & Power',
-  'Nutech Distribution',
-  'Nutech Logistics',
-  'Nutech Telecom',
-  'Nutech Technologies',
-  'Nutech Group',
-];
-
 // ── Canvas animation constants ────────────────────────────────────────────────
 const SPACING        = 55;
 const INFLUENCE_RADIUS = 180;
@@ -356,16 +346,6 @@ export default function Hero() {
           </div>
 
         </section>
-
-        {/* ── Ticker ── */}
-        <div className={styles.tickerWrap}>
-          <div className={styles.tickerTrack}>
-            {/* Render twice for seamless loop */}
-            {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
-              <span key={i} className={styles.tickerItem}>{item}</span>
-            ))}
-          </div>
-        </div>
 
         {/* Mouse spotlight */}
         <div ref={spotlightRef} className={styles.mouseSpotlight} />
