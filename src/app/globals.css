@@ -16,8 +16,10 @@
   --transition-main: all 0.3s ease-in-out;
 }
 
-html {
-  scrollbar-gutter: stable;
+@supports (scrollbar-gutter: stable) {
+  html {
+    scrollbar-gutter: stable;
+  }
 }
 
 body {
