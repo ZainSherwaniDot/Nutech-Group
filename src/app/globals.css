@@ -26,12 +26,17 @@
   --font-dm-mono: var(--font-dm-mono);
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   /* cursor: url(./../../public/cursor.svg) 12 12, auto; */
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .mainGlobal {
   max-width: 1920px;
   overflow: hidden;
