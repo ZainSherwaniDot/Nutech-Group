@@ -16,9 +16,9 @@
   --transition-main: all 0.3s ease-in-out;
 }
 
-/* html {
+html {
   scrollbar-gutter: stable;
-} */
+}
 
 body {
   /* cursor: url(./../../public/cursor.svg) 12 12, auto; */
