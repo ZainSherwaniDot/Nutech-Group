@@ -1,13 +1,29 @@
 import styles from './Vendors.module.css';
 
 const TICKER_ITEMS = [
-  'Nutech Automotive',
-  'Nutech Solar & Power',
-  'Nutech Distribution',
-  'Nutech Logistics',
-  'Nutech Telecom',
-  'Nutech Technologies',
-  'Nutech Group',
+  'Apple',
+  'hp',
+  'dell',
+  'huawei',
+  'HPE',
+  'kaspersky',
+  'red hat',
+  'microsoft',
+  'rapid7',
+  'cambium networks',
+  'belkin',
+  'vmware',
+  'veritas',
+  'oracle',
+  'apc',
+  'h3c',
+  'veeam',
+  'sophos',
+  'f5',
+  'citrix',
+  'strike ready',
+  'trend micro',
+  'fortinet',
 ];
 
 export default function Vendors() {
