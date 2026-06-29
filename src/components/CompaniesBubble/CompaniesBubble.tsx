@@ -10,7 +10,7 @@ interface SubCompany {
   id: string;
   icon: string;
   chip: string;
-  name: React.ReactNode;
+  name: string;
   sub: string;
   cardClass: string;
   hrefLink: string;
@@ -29,7 +29,7 @@ const subCompanies: SubCompany[] = [
     id: "auto",
     icon: "🚗",
     chip: "Automotive",
-    name: <>Nutech Automotive</>,
+    name: "Nutech Automotive",
     sub: "Tools, Equipment & Service Excellence",
     cardClass: styles.cardAuto,
     hrefLink: "/companies/nutech-automotive",
@@ -38,7 +38,7 @@ const subCompanies: SubCompany[] = [
     id: "solar",
     icon: "☀️",
     chip: "Energy",
-    name: <>Nutech Solar &amp; Power</>,
+    name: "Nutech Solar &amp; Power",
     sub: "Renewable Energy Solutions",
     cardClass: styles.cardSolar,
     hrefLink: "/companies/nutech-solar",
@@ -47,7 +47,7 @@ const subCompanies: SubCompany[] = [
     id: "dist",
     icon: "📦",
     chip: "Distribution",
-    name: <>Nutech Distribution</>,
+    name: "Nutech Distribution",
     sub: "Computer Hardware & Consumer Goods",
     cardClass: styles.cardDist,
     hrefLink: "/companies/nutech-distribution",
@@ -56,7 +56,7 @@ const subCompanies: SubCompany[] = [
     id: "logi",
     icon: "🚚",
     chip: "Logistics",
-    name: <>Nutech Logistics</>,
+    name: "Nutech Logistics",
     sub: "Shipping, Exporting & Customs",
     cardClass: styles.cardLogi,
     hrefLink: "/companies/nutech-logistics",
@@ -65,7 +65,7 @@ const subCompanies: SubCompany[] = [
     id: "tele",
     icon: "📡",
     chip: "Telecom",
-    name: <>Nutech Telecom</>,
+    name: "Nutech Telecom",
     sub: "Connectivity & Telecommunication Infrastructure",
     cardClass: styles.cardTele,
     hrefLink: "/companies/nutech-telecom",
@@ -74,7 +74,7 @@ const subCompanies: SubCompany[] = [
     id: "tech",
     icon: "💻",
     chip: "Technology",
-    name: <>Nutech Technologies</>,
+    name: "Nutech Technologies",
     sub: "Software Development, Cloud Solutions & AI",
     cardClass: styles.cardTech,
     hrefLink: "/companies/nutech-technologies",
