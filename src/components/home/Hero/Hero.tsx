@@ -19,7 +19,7 @@ const COMPANIES = [
     icon: '🚗',
     chip: 'Automotive',
     name: <>Nutech<br />Automotive</>,
-    sub: 'Tools, Parts & Service Excellence',
+    sub: 'Tools, Equipment & Service Excellence',
     cardClass: styles.cardAuto,
     hrefLink: "/companies/nutech-automotive",
   },
