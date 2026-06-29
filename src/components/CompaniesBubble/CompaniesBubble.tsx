@@ -181,20 +181,12 @@ export default function CompaniesBubble({
         <svg className={styles.lines} aria-hidden="true">
           {paths.map((p, i) =>
             p ? (
-              <g key={companies[i]?.id ?? i} style={{ animationDelay: `${i * 45}ms` }}>
-                <path
-                  d={p.d}
-                  pathLength={1}
-                  className={styles.line}
-                  style={{ animationDelay: `${i * 45}ms` }}
-                />
-                <circle
-                  cx={p.sx}
-                  cy={p.sy}
-                  r="3.5"
-                  className={styles.node}
-                  style={{ animationDelay: `${i * 45}ms` }}
-                />
+              <g
+                key={companies[i]?.id ?? i}
+                style={{ "--chub-delay": `${i * 45}ms` } as React.CSSProperties}
+              >
+                <path d={p.d} pathLength={1} className={styles.line} />
+                <circle cx={p.sx} cy={p.sy} r="3.5" className={styles.node} />
               </g>
             ) : null
           )}
@@ -208,7 +200,7 @@ export default function CompaniesBubble({
               key={c.id}
               className={styles.cardItem}
               role="none"
-              style={{ animationDelay: `${i * 45}ms` }}
+              style={{ "--chub-delay": `${i * 45}ms` } as React.CSSProperties}
             >
               <Link
                 href={c.hrefLink}

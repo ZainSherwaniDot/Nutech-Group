@@ -81,13 +81,13 @@
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   opacity: 0.85;
-  animation: chubDrawLine 0.5s ease forwards;
+  animation: chubDrawLine 0.5s ease var(--chub-delay, 0ms) forwards;
 }
 
 .node {
   fill: var(--chub-line);
   opacity: 0;
-  animation: chubNodeIn 0.3s ease forwards;
+  animation: chubNodeIn 0.3s ease var(--chub-delay, 0ms) forwards;
 }
 
 /* ---------------------------------- Cards ---------------------------------- */
@@ -113,7 +113,7 @@
 .cardItem {
   opacity: 0;
   transform: translateX(16px);
-  animation: chubCardIn 0.35s ease forwards;
+  animation: chubCardIn 0.35s ease var(--chub-delay, 0ms) forwards;
 }
 
 .card {
