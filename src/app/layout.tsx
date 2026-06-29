@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import CompaniesBubble from "@/components/CompaniesBubble/CompaniesBubble";
 import { Geist, Geist_Mono, Bebas_Neue, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -49,7 +50,10 @@ export default function RootLayout({
     >
       <body className="min-h-full">
         <Header />
-        <main className="mainGlobal">{children}</main>
+        <main className="mainGlobal">
+          {children}
+          <CompaniesBubble />
+        </main>
         <Footer />
       </body>
     </html>
