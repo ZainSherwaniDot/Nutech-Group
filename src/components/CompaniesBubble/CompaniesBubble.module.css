@@ -32,6 +32,7 @@
   z-index: 1000;
   box-shadow: 0 0 0 6px var(--chub-ring), 0 10px 24px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: chubPulse 2s ease-in-out infinite;
 }
 
 .bubble:hover {
@@ -44,6 +45,7 @@
 }
 
 .bubbleOpen {
+  animation: none;
   box-shadow: 0 0 0 9px var(--chub-ring), 0 10px 24px rgba(0, 0, 0, 0.3);
 }
 
@@ -201,6 +203,29 @@
 
 @keyframes chubNodeIn {
   to { opacity: 1; }
+}
+
+@keyframes chubPulse {
+  0% {
+    transform: translateY(-50%) scale(1);
+    box-shadow:
+      0 0 0 6px var(--chub-ring),
+      0 10px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  50% {
+    transform: translateY(-50%) scale(1.08);
+    box-shadow:
+      0 0 0 14px rgba(199, 162, 74, 0.18),
+      0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  100% {
+    transform: translateY(-50%) scale(1);
+    box-shadow:
+      0 0 0 6px var(--chub-ring),
+      0 10px 24px rgba(0, 0, 0, 0.25);
+  }
 }
 
 /* -------------------------------- Breakpoints ------------------------------- */
