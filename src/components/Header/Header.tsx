@@ -7,7 +7,7 @@ export default function Header() {
     <header className={styles.mainHeader}>
       <nav className={styles.nav}>
         <Link href="/">
-          <Image className={styles.logo} src="/logo120.png" alt="Logo" width={120} height={45} priority />
+          <Image className={styles.logo} src="/logo120.png" alt="Nutech Group Logo" width={120} height={45} priority />
         </Link>
         <ul className={styles.navList}>
           {/* <li><Link href="/">Home</Link></li> */}

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./CompaniesBubble.module.css";
 
 /* ---------------------------------- Types --------------------------------- */
@@ -80,27 +81,6 @@ const subCompanies: SubCompany[] = [
     hrefLink: "/companies/nutech-technologies",
   },
 ];
-
-/* ---------------------------------- Icons --------------------------------- */
-
-function HubIcon(): React.ReactElement {
-  const satellites = [0, 60, 120, 180, 240, 300].map((deg) => {
-    const rad = (deg * Math.PI) / 180;
-    return { x: 24 + Math.cos(rad) * 17, y: 24 + Math.sin(rad) * 17, deg };
-  });
-
-  return (
-    <svg width="26" height="26" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      {satellites.map(({ x, y, deg }) => (
-        <g key={deg}>
-          <line x1="24" y1="24" x2={x} y2={y} stroke="currentColor" strokeWidth="2" opacity="0.6" />
-          <circle cx={x} cy={y} r="3" fill="currentColor" />
-        </g>
-      ))}
-      <circle cx="24" cy="24" r="6.5" fill="currentColor" />
-    </svg>
-  );
-}
 
 /* --------------------------------- Component ------------------------------ */
 
@@ -229,7 +209,7 @@ export default function CompaniesBubble({
         aria-haspopup="true"
         aria-label={label}
       >
-        <HubIcon />
+        <Image className={styles.nutechIcon} src="/icon.png" alt="Nutech Group Icon" width={64} height={64} priority />
       </button>
     </>
   );
