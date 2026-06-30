@@ -18,7 +18,7 @@ const COMPANIES = [
     id: 'auto',
     icon: '🚗',
     chip: 'Automotive',
-    name: <>Nutech<br />Automotive</>,
+    name: 'Automotive',
     sub: 'Tools, Equipment & Service Excellence',
     cardClass: styles.cardAuto,
     hrefLink: "/companies/nutech-automotive",
@@ -27,7 +27,7 @@ const COMPANIES = [
     id: 'solar',
     icon: '☀️',
     chip: 'Energy',
-    name: <>Nutech<br />Solar &amp; Power</>,
+    name: 'Solar & Power',
     sub: 'Renewable Energy Solutions',
     cardClass: styles.cardSolar,
     hrefLink: "/companies/nutech-solar",
@@ -36,7 +36,7 @@ const COMPANIES = [
     id: 'dist',
     icon: '📦',
     chip: 'Distribution',
-    name: <>Nutech<br />Distribution</>,
+    name: 'Distribution',
     sub: 'Computer Hardware & Consumer Goods',
     cardClass: styles.cardDist,
     hrefLink: "/companies/nutech-distribution",
@@ -45,7 +45,7 @@ const COMPANIES = [
     id: 'logi',
     icon: '🚚',
     chip: 'Logistics',
-    name: <>Nutech<br />Logistics</>,
+    name: 'Logistics',
     sub: 'Shipping, Exporting & Customs',
     cardClass: styles.cardLogi,
     hrefLink: "/companies/nutech-logistics",
@@ -54,7 +54,7 @@ const COMPANIES = [
     id: 'tele',
     icon: '📡',
     chip: 'Telecom',
-    name: <>Nutech<br />Telecom</>,
+    name: 'Telecom',
     sub: 'Connectivity & Telecommunication Infrastructure',
     cardClass: styles.cardTele,
     hrefLink: "/companies/nutech-telecom",
@@ -63,7 +63,7 @@ const COMPANIES = [
     id: 'tech',
     icon: '💻',
     chip: 'Technology',
-    name: <>Nutech<br />Technologies</>,
+    name: 'Technologies',
     sub: 'Software Development, Cloud Solutions & AI',
     cardClass: styles.cardTech,
     hrefLink: "/companies/nutech-technologies",
@@ -338,7 +338,7 @@ export default function Hero() {
               >
                 <span className={styles.cardIcon}>{icon}</span>
                 <div className={styles.chip}>{chip}</div>
-                <div className={styles.cardName}>{name}</div>
+                <div className={styles.cardName}>Nutech<br />{name}</div>
                 <div className={styles.cardSub}>{sub}</div>
                 <span className={styles.cardArrow}>↗</span>
               </Link>
