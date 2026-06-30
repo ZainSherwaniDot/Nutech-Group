@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import styles from './Hero.module.css';
+import { subCompanies } from "@/data/companies";
 import { FaInstagram, FaLinkedin, FaFacebook, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -12,63 +13,6 @@ import { MdEmail } from "react-icons/md";
 //   { num: '20', suffix: '+', label: 'Years Active' },
 //   { num: '1',  suffix: 'K+', label: 'Employees' },
 // ];
-
-const COMPANIES = [
-  {
-    id: 'auto',
-    icon: '🚗',
-    chip: 'Automotive',
-    name: 'Automotive',
-    sub: 'Tools, Equipment & Service Excellence',
-    cardClass: styles.cardAuto,
-    hrefLink: "/companies/nutech-automotive",
-  },
-  {
-    id: 'solar',
-    icon: '☀️',
-    chip: 'Energy',
-    name: 'Solar & Power',
-    sub: 'Renewable Energy Solutions',
-    cardClass: styles.cardSolar,
-    hrefLink: "/companies/nutech-solar",
-  },
-  {
-    id: 'dist',
-    icon: '📦',
-    chip: 'Distribution',
-    name: 'Distribution',
-    sub: 'Computer Hardware & Consumer Goods',
-    cardClass: styles.cardDist,
-    hrefLink: "/companies/nutech-distribution",
-  },
-  {
-    id: 'logi',
-    icon: '🚚',
-    chip: 'Logistics',
-    name: 'Logistics',
-    sub: 'Shipping, Exporting & Customs',
-    cardClass: styles.cardLogi,
-    hrefLink: "/companies/nutech-logistics",
-  },
-  {
-    id: 'tele',
-    icon: '📡',
-    chip: 'Telecom',
-    name: 'Telecom',
-    sub: 'Connectivity & Telecommunication Infrastructure',
-    cardClass: styles.cardTele,
-    hrefLink: "/companies/nutech-telecom",
-  },
-  {
-    id: 'tech',
-    icon: '💻',
-    chip: 'Technology',
-    name: 'Technologies',
-    sub: 'Software Development, Cloud Solutions & AI',
-    cardClass: styles.cardTech,
-    hrefLink: "/companies/nutech-technologies",
-  },
-];
 
 // ── Canvas animation constants ────────────────────────────────────────────────
 const SPACING        = 55;
@@ -330,11 +274,11 @@ export default function Hero() {
 
           {/* RIGHT – Company Cards */}
           <div className={styles.heroRight}>
-            {COMPANIES.map(({ id, icon, chip, name, sub, cardClass, hrefLink }) => (
+            {subCompanies.map(({ id, icon, chip, name, sub, cardClass, hrefLink }) => (
               <Link
                 key={id}
                 href={hrefLink}
-                className={`${styles.companyCard} ${cardClass}`}
+                className={`${styles.companyCard} ${styles[cardClass]}`}
               >
                 <span className={styles.cardIcon}>{icon}</span>
                 <div className={styles.chip}>{chip}</div>

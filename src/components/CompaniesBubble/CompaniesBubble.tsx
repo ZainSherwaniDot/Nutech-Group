@@ -4,83 +4,16 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./CompaniesBubble.module.css";
+import { subCompanies, type SubCompany } from "@/data/companies";
+
 
 /* ---------------------------------- Types --------------------------------- */
-
-interface SubCompany {
-  id: string;
-  icon: string;
-  chip: string;
-  name: string;
-  sub: string;
-  cardClass: string;
-  hrefLink: string;
-}
 
 interface PathData {
   d: string;
   sx: number;
   sy: number;
 }
-
-/* ---------------------------------- Data ---------------------------------- */
-
-const subCompanies: SubCompany[] = [
-  {
-    id: "auto",
-    icon: "🚗",
-    chip: "Automotive",
-    name: "Automotive",
-    sub: "Tools, Equipment & Service Excellence",
-    cardClass: styles.cardAuto,
-    hrefLink: "/companies/nutech-automotive",
-  },
-  {
-    id: "solar",
-    icon: "☀️",
-    chip: "Energy",
-    name: "Solar & Power",
-    sub: "Renewable Energy Solutions",
-    cardClass: styles.cardSolar,
-    hrefLink: "/companies/nutech-solar",
-  },
-  {
-    id: "dist",
-    icon: "📦",
-    chip: "Distribution",
-    name: "Distribution",
-    sub: "Computer Hardware & Consumer Goods",
-    cardClass: styles.cardDist,
-    hrefLink: "/companies/nutech-distribution",
-  },
-  {
-    id: "logi",
-    icon: "🚚",
-    chip: "Logistics",
-    name: "Logistics",
-    sub: "Shipping, Exporting & Customs",
-    cardClass: styles.cardLogi,
-    hrefLink: "/companies/nutech-logistics",
-  },
-  {
-    id: "tele",
-    icon: "📡",
-    chip: "Telecom",
-    name: "Telecom",
-    sub: "Connectivity & Telecommunication Infrastructure",
-    cardClass: styles.cardTele,
-    hrefLink: "/companies/nutech-telecom",
-  },
-  {
-    id: "tech",
-    icon: "💻",
-    chip: "Technology",
-    name: "Technologies",
-    sub: "Software Development, Cloud Solutions & AI",
-    cardClass: styles.cardTech,
-    hrefLink: "/companies/nutech-technologies",
-  },
-];
 
 /* --------------------------------- Component ------------------------------ */
 
@@ -175,24 +108,25 @@ export default function CompaniesBubble({
 
       {open && (
         <ul className={styles.cardList} ref={listRef} role="menu" aria-label="Our companies">
-          {companies.map((c, i) => (
+          {companies.map(({ id, icon, name, sub, hrefLink }, i) => (
+        //   {companies.map((c, i) => (
             <li
-              key={c.id}
+              key={id}
               className={styles.cardItem}
               role="none"
               style={{ "--chub-delay": `${i * 45}ms` } as React.CSSProperties}
             >
               <Link
-                href={c.hrefLink}
+                href={hrefLink}
                 role="menuitem"
                 ref={(el) => { cardRefs.current[i] = el; }}
                 className={styles.card}
                 onClick={() => setOpen(false)}
               >
-                <span className={styles.cardIcon}>{c.icon}</span>
+                <span className={styles.cardIcon}>{icon}</span>
                 <span className={styles.cardText}>
-                  <span className={styles.cardTitle}>Nutech {c.name}</span>
-                  <span className={styles.cardDesc}>{c.sub}</span>
+                  <span className={styles.cardTitle}>Nutech {name}</span>
+                  <span className={styles.cardDesc}>{sub}</span>
                 </span>
               </Link>
             </li>

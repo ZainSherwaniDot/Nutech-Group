@@ -12,14 +12,14 @@ export interface SubCompany {
 
 /* ---------------------------------- Data ---------------------------------- */
 
-const subCompanies: SubCompany[] = [
+export const subCompanies: SubCompany[] = [
   {
     id: "auto",
     icon: "🚗",
     chip: "Automotive",
     name: "Automotive",
     sub: "Tools, Equipment & Service Excellence",
-    cardClass: styles.cardAuto,
+    cardClass: "cardAuto",
     hrefLink: "/companies/nutech-automotive",
   },
   {
@@ -28,7 +28,7 @@ const subCompanies: SubCompany[] = [
     chip: "Energy",
     name: "Solar & Power",
     sub: "Renewable Energy Solutions",
-    cardClass: styles.cardSolar,
+    cardClass: "cardSolar",
     hrefLink: "/companies/nutech-solar",
   },
   {
@@ -37,7 +37,7 @@ const subCompanies: SubCompany[] = [
     chip: "Distribution",
     name: "Distribution",
     sub: "Computer Hardware & Consumer Goods",
-    cardClass: styles.cardDist,
+    cardClass: "cardDist",
     hrefLink: "/companies/nutech-distribution",
   },
   {
@@ -46,7 +46,7 @@ const subCompanies: SubCompany[] = [
     chip: "Logistics",
     name: "Logistics",
     sub: "Shipping, Exporting & Customs",
-    cardClass: styles.cardLogi,
+    cardClass: "cardLogi",
     hrefLink: "/companies/nutech-logistics",
   },
   {
@@ -55,7 +55,7 @@ const subCompanies: SubCompany[] = [
     chip: "Telecom",
     name: "Telecom",
     sub: "Connectivity & Telecommunication Infrastructure",
-    cardClass: styles.cardTele,
+    cardClass: "cardTele",
     hrefLink: "/companies/nutech-telecom",
   },
   {
@@ -64,7 +64,7 @@ const subCompanies: SubCompany[] = [
     chip: "Technology",
     name: "Technologies",
     sub: "Software Development, Cloud Solutions & AI",
-    cardClass: styles.cardTech,
+    cardClass: "cardTech",
     hrefLink: "/companies/nutech-technologies",
   },
 ];
