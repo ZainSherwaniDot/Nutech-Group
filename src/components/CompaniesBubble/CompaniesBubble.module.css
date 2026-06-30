@@ -213,13 +213,26 @@
 
 /* -------------------------------- Breakpoints ------------------------------- */
 
-/* @media (max-width: 500px) {
-  .cardList { width: 280px; }
-} */
- 
 @media (max-width: 500px) {
-  .bubbleOpen, .lines, .line, .node { display: none; }
+    .bubbleOpen,
+    .lines,
+    .line,
+    .node {
+        display: none;
+    }
+    .cardList {
+        right: 50%;
+        transform: translate(50%, -50%);
+        /* width: 300px; */
+    }
+    .card:hover,
+    .card:focus-visible {
+        transform: translateY(-4px);
+    }
 }
+
+@media (max-width: 400px) { .cardList { width: 300px; } }
+@media (max-width: 350px) { .cardList { width: 270px; } }
 
 /* ------------------------------ Reduced motion ------------------------------ */
 
