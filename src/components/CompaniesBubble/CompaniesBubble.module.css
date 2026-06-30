@@ -97,7 +97,6 @@
 
 .cardItem {
   opacity: 0;
-  transform: translateX(16px);
   animation: chubCardIn 0.35s ease var(--chub-delay, 0ms) forwards;
 }
 
@@ -181,7 +180,7 @@
 }
 
 @keyframes chubCardIn {
-  to { opacity: 1; transform: translateX(0); }
+  to { opacity: 1; }
 }
 
 @keyframes chubDrawLine {
@@ -214,18 +213,12 @@
 
 /* -------------------------------- Breakpoints ------------------------------- */
 
-@media (max-width: 500px) {
-  .bubble { width: 48px; height: 48px; right: 14px; }
-  .cardList { right: 64px; gap: 8px; }
-  .card { padding: 10px 12px; gap: 10px; }
-  .cardIcon { width: 30px; height: 30px; }
-  .cardIcon svg { width: 16px; height: 16px; }
-  .cardTitle { font-size: 13px; }
-  .cardDesc { font-size: 11px; }
-}
-
-@media (max-width: 430px) {
+/* @media (max-width: 500px) {
   .cardList { width: 280px; }
+} */
+ 
+@media (max-width: 500px) {
+  .bubbleOpen, .lines, .line, .node { display: none; }
 }
 
 /* ------------------------------ Reduced motion ------------------------------ */
