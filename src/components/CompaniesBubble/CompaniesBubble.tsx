@@ -29,7 +29,7 @@ const subCompanies: SubCompany[] = [
     id: "auto",
     icon: "🚗",
     chip: "Automotive",
-    name: "Nutech Automotive",
+    name: "Automotive",
     sub: "Tools, Equipment & Service Excellence",
     cardClass: styles.cardAuto,
     hrefLink: "/companies/nutech-automotive",
@@ -38,7 +38,7 @@ const subCompanies: SubCompany[] = [
     id: "solar",
     icon: "☀️",
     chip: "Energy",
-    name: "Nutech Solar &amp; Power",
+    name: "Solar & Power",
     sub: "Renewable Energy Solutions",
     cardClass: styles.cardSolar,
     hrefLink: "/companies/nutech-solar",
@@ -47,7 +47,7 @@ const subCompanies: SubCompany[] = [
     id: "dist",
     icon: "📦",
     chip: "Distribution",
-    name: "Nutech Distribution",
+    name: "Distribution",
     sub: "Computer Hardware & Consumer Goods",
     cardClass: styles.cardDist,
     hrefLink: "/companies/nutech-distribution",
@@ -56,7 +56,7 @@ const subCompanies: SubCompany[] = [
     id: "logi",
     icon: "🚚",
     chip: "Logistics",
-    name: "Nutech Logistics",
+    name: "Logistics",
     sub: "Shipping, Exporting & Customs",
     cardClass: styles.cardLogi,
     hrefLink: "/companies/nutech-logistics",
@@ -65,7 +65,7 @@ const subCompanies: SubCompany[] = [
     id: "tele",
     icon: "📡",
     chip: "Telecom",
-    name: "Nutech Telecom",
+    name: "Telecom",
     sub: "Connectivity & Telecommunication Infrastructure",
     cardClass: styles.cardTele,
     hrefLink: "/companies/nutech-telecom",
@@ -74,7 +74,7 @@ const subCompanies: SubCompany[] = [
     id: "tech",
     icon: "💻",
     chip: "Technology",
-    name: "Nutech Technologies",
+    name: "Technologies",
     sub: "Software Development, Cloud Solutions & AI",
     cardClass: styles.cardTech,
     hrefLink: "/companies/nutech-technologies",
@@ -211,7 +211,7 @@ export default function CompaniesBubble({
               >
                 <span className={styles.cardIcon}>{c.icon}</span>
                 <span className={styles.cardText}>
-                  <span className={styles.cardTitle}>{c.name}</span>
+                  <span className={styles.cardTitle}>Nutech {c.name}</span>
                   <span className={styles.cardDesc}>{c.sub}</span>
                 </span>
               </Link>
