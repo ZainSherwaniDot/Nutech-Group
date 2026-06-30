@@ -51,8 +51,8 @@ export default function RootLayout({
       <body className="min-h-full">
         <Header />
         <main className="mainGlobal">
-          {children}
           <CompaniesBubble />
+          {children}
         </main>
         <Footer />
       </body>

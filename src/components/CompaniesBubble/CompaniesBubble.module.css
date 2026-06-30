@@ -1,16 +1,3 @@
-/* CompanyHub.module.css */
-
-/* Theme tokens — override these in your own global CSS to re-skin the widget. */
-:global(:root) {
-  --chub-ink: #1b2430;       /* bubble + card title color */
-  --chub-paper: #fbfaf7;     /* card background */
-  --chub-line: #c7a24a;      /* brass connector lines, icon accents */
-  --chub-text: #20242b;      /* card title color */
-  --chub-sub: #6b7280;       /* card description color */
-  --chub-ring: rgba(199, 162, 74, 0.35);
-  --chub-backdrop: rgba(10, 12, 16, 0.4);
-}
-
 /* ------------------------------- The bubble -------------------------------- */
 
 .bubble {
@@ -33,10 +20,6 @@
   box-shadow: 0 0 0 6px var(--chub-ring), 0 10px 24px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   animation: chubPulse 2s ease-in-out infinite;
-}
-
-.bubble:hover {
-  transform: translateY(-50%) scale(1.05);
 }
 
 .bubble:focus-visible {
@@ -110,7 +93,6 @@
   margin: 0;
   padding: 4px;
   z-index: 999;
-  scrollbar-width: thin;
 }
 
 .cardItem {
@@ -212,21 +194,18 @@
 
 @keyframes chubPulse {
   0% {
-    transform: translateY(-50%) scale(1);
     box-shadow:
       0 0 0 6px var(--chub-ring),
       0 10px 24px rgba(0, 0, 0, 0.25);
   }
 
   50% {
-    transform: translateY(-50%) scale(1.08);
     box-shadow:
       0 0 0 14px rgba(199, 162, 74, 0.18),
       0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
   100% {
-    transform: translateY(-50%) scale(1);
     box-shadow:
       0 0 0 6px var(--chub-ring),
       0 10px 24px rgba(0, 0, 0, 0.25);
@@ -235,19 +214,18 @@
 
 /* -------------------------------- Breakpoints ------------------------------- */
 
-@media (max-width: 1023px) {
-  .bubble { width: 58px; height: 58px; right: 22px; }
-  .cardList { right: 96px; width: 280px; }
-}
-
-@media (max-width: 640px) {
+@media (max-width: 500px) {
   .bubble { width: 48px; height: 48px; right: 14px; }
-  .cardList { right: 64px; width: min(78vw, 280px); gap: 8px; }
+  .cardList { right: 64px; gap: 8px; }
   .card { padding: 10px 12px; gap: 10px; }
   .cardIcon { width: 30px; height: 30px; }
   .cardIcon svg { width: 16px; height: 16px; }
   .cardTitle { font-size: 13px; }
   .cardDesc { font-size: 11px; }
+}
+
+@media (max-width: 430px) {
+  .cardList { width: 280px; }
 }
 
 /* ------------------------------ Reduced motion ------------------------------ */

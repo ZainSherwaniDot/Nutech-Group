@@ -14,6 +14,15 @@
   --muted: #5a6a7a;
   --card-bg: rgba(255, 255, 255, 0.03);
   --transition-main: all 0.3s ease-in-out;
+
+  /* ------------- Sub-Companies Bubble ------------- */
+  --chub-ink: #1b2430;       /* bubble + card title color */
+  --chub-paper: #fbfaf7;     /* card background */
+  --chub-line: #c7a24a;      /* brass connector lines, icon accents */
+  --chub-text: #20242b;      /* card title color */
+  --chub-sub: #6b7280;       /* card description color */
+  --chub-ring: rgba(199, 162, 74, 0.35);
+  --chub-backdrop: rgba(10, 12, 16, 0.4);
 }
 
 @supports (scrollbar-gutter: stable) {
