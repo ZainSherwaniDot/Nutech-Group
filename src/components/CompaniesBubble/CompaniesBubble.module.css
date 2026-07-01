@@ -41,7 +41,7 @@
   inset: 0;
   background: var(--chub-backdrop);
   backdrop-filter: blur(2px);
-  z-index: 998;
+  z-index: 997;
   animation: chubFadeIn 0.2s ease;
 }
 
@@ -89,7 +89,7 @@
   list-style: none;
   margin: 0;
   padding: 4px;
-  z-index: 999;
+  z-index: 998;
 }
 
 .cardItem {
