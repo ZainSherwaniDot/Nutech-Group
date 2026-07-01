@@ -40,6 +40,7 @@
   position: fixed;
   inset: 0;
   background: var(--chub-backdrop);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   z-index: 997;
   animation: chubFadeIn 0.2s ease;
@@ -159,6 +160,7 @@
   line-height: 1.35;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
