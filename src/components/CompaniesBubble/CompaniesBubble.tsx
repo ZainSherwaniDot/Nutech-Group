@@ -24,7 +24,7 @@ interface CompaniesBubbleProps {
 
 export default function CompaniesBubble({
   companies = subCompanies,
-  label = "Open our companies menu",
+  label = "View our companies",
 }: CompaniesBubbleProps): React.ReactElement {
   const [open, setOpen] = useState<boolean>(false);
   const [paths, setPaths] = useState<(PathData | null)[]>([]);
@@ -107,9 +107,8 @@ export default function CompaniesBubble({
       )}
 
       {open && (
-        <ul className={styles.cardList} ref={listRef} role="menu" aria-label="Our companies">
+        <ul className={styles.cardList} ref={listRef} aria-label="Our companies">
           {companies.map(({ id, icon, name, sub, hrefLink }, i) => (
-        //   {companies.map((c, i) => (
             <li
               key={id}
               className={styles.cardItem}
@@ -118,7 +117,6 @@ export default function CompaniesBubble({
             >
               <Link
                 href={hrefLink}
-                role="menuitem"
                 ref={(el) => { cardRefs.current[i] = el; }}
                 className={styles.card}
                 onClick={() => setOpen(false)}
