@@ -85,7 +85,7 @@ export default function CompaniesBubble({
   }, [open]);
 
   return (
-    <>
+    <div className={styles.mainCompaniesBubble}>
       {open && (
         <div className={styles.backdrop} onClick={() => setOpen(false)} aria-hidden="true" />
       )}
@@ -143,6 +143,6 @@ export default function CompaniesBubble({
       >
         <Image className={styles.nutechIcon} src="/icon.png" alt="Nutech Group Icon" width={64} height={64} priority />
       </button>
-    </>
+    </div>
   );
 }
