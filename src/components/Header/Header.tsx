@@ -1,14 +1,34 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.css";
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 1);
+    };
+
+    handleScroll(); // Check initial position
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className={styles.mainHeader}>
+    <header
+      className={`${styles.mainHeader} ${
+        scrolled ? styles.mainHeaderScrolled : ""
+      }`}
+    >
+      <Link href="/">
+        <Image className={styles.logo} src="/logo120.png" alt="Nutech Group Logo" width={120} height={45} priority />
+      </Link>
       <nav className={styles.nav}>
-        <Link href="/">
-          <Image className={styles.logo} src="/logo120.png" alt="Nutech Group Logo" width={120} height={45} priority />
-        </Link>
         <ul className={styles.navList}>
           {/* <li><Link href="/">Home</Link></li> */}
           <li className={styles.dropdown}>
@@ -28,8 +48,8 @@ export default function Header() {
           <li><Link href="/careers">Careers</Link></li>
           <li><Link href="/contact">Contact</Link></li>
         </ul>
-        <button className={styles.navCta}>Book an Appointment</button>
       </nav>
+      <button className={styles.navCta}>Book an Appointment</button>
     </header>
   );
 }
