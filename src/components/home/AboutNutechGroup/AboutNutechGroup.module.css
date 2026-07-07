@@ -1,4 +1,5 @@
 .mainANG{
     background-color: var(--foreground);
     color: var(--background);
+    border-radius: 5px;
 }
