@@ -15,6 +15,7 @@
   --card-bg: rgba(255, 255, 255, 0.03);
   --transition-main: all 0.3s ease-in-out;
   --zee-index-max: 100000;
+  --zee-index-overlay-section: 100;
 
   /* ------------- Sub-Companies Bubble ------------- */
   --chub-paper: #fbfaf7;
