@@ -2,7 +2,7 @@
     background: var(--background);
     color: var(--foreground);
     position: relative;
-    z-index: calc(var(--zee-index-max) - 4);
+    z-index: calc(var(--zee-index-max) - 5);
     display: flex;
     place-items: center;
     place-content: center;

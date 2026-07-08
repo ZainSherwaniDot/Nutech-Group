@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   /* background: var(--bg); */
-  z-index: calc(var(--zee-index-max) - 5);
+  z-index: calc(var(--zee-index-max) - 4);
   margin-inline: auto;
   transition: var(--transition-main);
   position: sticky;
