@@ -164,6 +164,9 @@
   box-shadow: 0 18px 46px rgba(8, 12, 16, 0.1);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
+  transform: translate3d(0, 0, 0);
+  animation: snapshotFloat 5.8s ease-in-out infinite;
+  will-change: transform;
 }
 
 .snapshotHeader {
@@ -338,6 +341,17 @@
   line-height: 1;
 }
 
+@keyframes snapshotFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 14px, 0);
+  }
+}
+
 @media (max-width: 1100px) {
   .mainANG {
     padding: 64px 42px 38px;
@@ -443,7 +457,9 @@
 @media (prefers-reduced-motion: reduce) {
   .primaryLink,
   .secondaryLink,
+  .snapshot,
   .proofCard {
+    animation: none;
     transition: none;
   }
 
@@ -451,6 +467,7 @@
   .secondaryLink:hover,
   .primaryLink:focus-visible,
   .secondaryLink:focus-visible,
+  .snapshot,
   .proofCard:hover {
     transform: none;
   }
