@@ -8,6 +8,7 @@ import {
   Network,
   ShieldCheck,
 } from "lucide-react";
+import { subCompanies } from "@/data/companies";
 import styles from "./AboutNutechGroup.module.css";
 
 const PROOF_POINTS = [
@@ -26,15 +27,6 @@ const PROOF_POINTS = [
     title: "Practical delivery",
     text: "Nutech Group is built around dependable sourcing, technical clarity, and long-term service.",
   },
-];
-
-const SECTORS = [
-  "Automotive",
-  "Solar & Power",
-  "Distribution",
-  "Logistics",
-  "Telecom",
-  "Technologies",
 ];
 
 export default function AboutNutechGroup() {
@@ -133,8 +125,12 @@ export default function AboutNutechGroup() {
         </div>
 
         <ul className={styles.sectorList} aria-label="Nutech Group sectors">
-          {SECTORS.map((sector) => (
-            <li key={sector}>{sector}</li>
+          {subCompanies.map(({ id, name, hrefLink }) => (
+            <li key={id}>
+              <Link href={hrefLink} className={styles.sectorLink}>
+                {name}
+              </Link>
+            </li>
           ))}
         </ul>
       </div>
