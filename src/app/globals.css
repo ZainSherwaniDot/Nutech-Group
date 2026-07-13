@@ -61,3 +61,16 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+.overlaySection{
+  background-color: var(--foreground);
+  color: var(--background);
+  border-radius: 5px;
+  position: relative;
+  z-index: var(--zee-index-overlay-section);
+  isolation: isolate;
+  overflow: hidden;
+  margin-top: 96px;
+  font-family: "DM Sans", sans-serif;
+  box-shadow: 0 24px 80px rgba(var(--pure-black), 0.28);
+}

@@ -1,15 +1,5 @@
 .mainANG {
-  background-color: var(--foreground);
-  color: var(--background);
-  border-radius: 5px;
-  position: relative;
-  z-index: var(--zee-index-overlay-section);
-  isolation: isolate;
-  overflow: hidden;
-  margin: 96px 0 48px;
   padding: 72px 60px 44px;
-  font-family: "DM Sans", sans-serif;
-  box-shadow: 0 24px 80px rgba(var(--pure-black), 0.28);
 }
 
 .mainANG::before {
@@ -393,7 +383,6 @@
 
 @media (max-width: 760px) {
   .mainANG {
-    margin: 68px 0 32px;
     padding: 48px 24px 28px;
   }
 

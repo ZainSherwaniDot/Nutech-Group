@@ -31,7 +31,7 @@ const PROOF_POINTS = [
 
 export default function AboutNutechGroup() {
   return (
-    <section className={styles.mainANG} aria-labelledby="about-nutech-title">
+    <section className={`${styles.mainANG} overlaySection`} aria-labelledby="about-nutech-title">
       <div className={styles.introGrid}>
         <div className={styles.copyColumn}>
           <p className={styles.eyebrow}>About Nutech Group</p>
