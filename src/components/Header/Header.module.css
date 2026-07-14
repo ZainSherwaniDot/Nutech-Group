@@ -30,7 +30,7 @@
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  border-radius: 20px;
+  border-radius: var(--z-border-radius);
 }
 
 /* ── NAVBAR ── */
@@ -38,7 +38,7 @@
   position: relative;
   animation: fadeDown 0.6s ease both;
 }
-.logo { border-radius: 25px }
+.logo { border-radius: var(--z-border-radius) }
 .navList {
   list-style: none;
   display: flex;
@@ -81,7 +81,7 @@
   border: var(--borderDarkPop);
   border-top: none;
   background-color: var(--bgDarkPop);
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 var(--b-border-radius) var(--b-border-radius);
   padding: 5px 10px;
   top: 17px;
   translate: -10px 0;
@@ -120,7 +120,7 @@
   border: 1px solid var(--accent);
   color: var(--accent);
   padding: 8px 20px;
-  border-radius: 2px;
+  border-radius: var(--a-border-radius);
   background: transparent;
   cursor: pointer;
   transition: all 0.2s;

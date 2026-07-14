@@ -8,7 +8,7 @@
   width: 64px;
   height: 64px;
   box-sizing: border-box;
-  border-radius: 50%;
+  border-radius: var(--z-border-radius);
   border: none;
   background: #f7f7f7;
   color: var(--chub-paper);
@@ -106,7 +106,7 @@
   gap: 12px;
   background: var(--chub-paper);
   border: 1px solid rgba(27, 36, 48, 0.08);
-  border-radius: 10px;
+  border-radius: var(--b-border-radius);
   padding: 12px 14px;
   text-decoration: none;
   color: var(--chub-text);
@@ -134,7 +134,7 @@
   flex: none;
   width: 36px;
   height: 36px;
-  border-radius: 8px;
+  border-radius: var(--a-border-radius);
   display: flex;
   align-items: center;
   justify-content: center;

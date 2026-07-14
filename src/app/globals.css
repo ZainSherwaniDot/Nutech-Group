@@ -22,6 +22,9 @@
   --transition-main: all 0.3s ease-in-out;
   --zee-index-max: 100000;
   --zee-index-overlay-section: 100;
+  --a-border-radius: 4px;
+  --b-border-radius: 12px;
+  --z-border-radius: 10000px;
 
   /* ------------- Sub-Companies Bubble ------------- */
   --chub-paper: #fbfaf7;
@@ -65,7 +68,7 @@ body {
 .overlaySection{
   background-color: var(--foreground);
   color: var(--background);
-  border-radius: 5px;
+  border-radius: var(--b-border-radius);
   position: relative;
   z-index: var(--zee-index-overlay-section);
   isolation: isolate;

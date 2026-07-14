@@ -24,7 +24,7 @@
 /* ── Glow blobs ── */
 .blob {
   position: fixed;
-  border-radius: 50%;
+  border-radius: var(--z-border-radius);
   filter: blur(120px);
   pointer-events: none;
   z-index: 0;
@@ -117,7 +117,7 @@
   font-weight: 500;
   padding: 16px 36px;
   border: none;
-  border-radius: 2px;
+  border-radius: var(--a-border-radius);
   cursor: pointer;
   transition: all 0.25s;
   position: relative;
@@ -223,7 +223,7 @@
   /* -webkit-backdrop-filter: blur(108px) saturate(210%);
   backdrop-filter: blur(108px) saturate(210%); */
   border: var(--borderDarkPop);
-  border-radius: 12px;
+  border-radius: var(--b-border-radius);
   padding: 26px 22px;
   position: relative;
   overflow: hidden;
@@ -248,7 +248,7 @@
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.35s ease;
-  border-radius: 12px 12px 0 0;
+  border-radius: var(--b-border-radius) var(--b-border-radius) 0 0;
 }
 .companyCard:hover::before {
   transform: scaleX(1);
@@ -271,7 +271,7 @@
   background: radial-gradient(ellipse at 50% -10%, var(--card-glow, rgba(0, 212, 255, 0.09)) 0%, transparent 65%);
   opacity: 0;
   transition: opacity 0.35s;
-  border-radius: 12px;
+  border-radius: var(--b-border-radius);
 }
 .companyCard:hover::after {
   opacity: 1;
@@ -336,7 +336,7 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   padding: 3px 8px;
-  border-radius: 2px;
+  border-radius: var(--a-border-radius);
   margin-bottom: 10px;
 }
 
@@ -353,7 +353,7 @@
   position: fixed;
   width: 500px;
   height: 500px;
-  border-radius: 50%;
+  border-radius: var(--z-border-radius);
   background: radial-gradient(circle, rgba(0, 212, 255, 0.055) 0%, transparent 70%);
   pointer-events: none;
   z-index: 2;
