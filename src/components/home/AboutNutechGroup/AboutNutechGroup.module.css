@@ -129,7 +129,6 @@
 .secondaryLink:hover,
 .primaryLink:focus-visible,
 .secondaryLink:focus-visible {
-  /* transform: translateY(-2px); */
   & svg{
     transform: translateX(2px);
   }
