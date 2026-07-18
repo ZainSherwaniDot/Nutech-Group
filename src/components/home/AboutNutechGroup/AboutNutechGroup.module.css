@@ -162,6 +162,9 @@
   transform: translate3d(0, 0, 0);
   animation: snapshotFloat 5.8s ease-in-out infinite;
   will-change: transform;
+  &:hover{
+    border-color: rgba(var(--accent-rgb), 0.45);
+  }
 }
 
 .snapshotHeader {
