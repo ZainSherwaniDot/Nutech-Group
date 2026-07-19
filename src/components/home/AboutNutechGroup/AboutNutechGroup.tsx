@@ -45,11 +45,7 @@ export default function AboutNutechGroup() {
           </p>
 
           <p className={styles.bodyCopy}>
-            Nutech Group brings specialized companies under one umbrella to serve
-            high-growth sectors across the MEA region. Its founders
-            bring years of hands-on experience in procurement, distribution,
-            technology, logistics, energy, and infrastructure, giving every
-            company a clear operating standard from the start.
+            Founded with a forward-looking vision, Nutech Group unites six specialized businesses under one umbrella. Backed by leadership with decades of industry experience, we combine proven expertise with fresh perspectives to deliver reliable solutions, foster innovation, and create long-term value for our clients, partners, and communities.
           </p>
 
           <div className={styles.actions}>
