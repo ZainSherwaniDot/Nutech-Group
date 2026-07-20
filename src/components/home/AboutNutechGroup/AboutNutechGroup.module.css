@@ -434,7 +434,7 @@
   }
 
   .metrics div {
-    min-height: auto;
+    min-height: fit-content;
   }
 
   .sectorList {
