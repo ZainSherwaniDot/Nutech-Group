@@ -13,7 +13,7 @@
   background-size: 48px 48px;
 }
 
-.mainANG::after {
+/* .mainANG::after {
   content: "";
   position: absolute;
   inset: 0 0 0 auto;
@@ -23,7 +23,7 @@
     linear-gradient(135deg, transparent 0%, rgba(var(--accent-rgb), 0.13) 52%, rgba(var(--accent2-rgb), 0.12) 100%);
   clip-path: polygon(26% 0, 100% 0, 100% 100%, 0 100%);
   opacity: 0.72;
-}
+} */
 
 .introGrid {
   display: grid;
@@ -394,11 +394,11 @@
     padding: 48px 24px 28px;
   }
 
-  .mainANG::after {
+  /* .mainANG::after {
     width: 100%;
     opacity: 0.38;
     clip-path: polygon(0 0, 100% 0, 100% 42%, 0 68%);
-  }
+  } */
 
   .title {
     font-size: 56px;
