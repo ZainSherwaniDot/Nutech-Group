@@ -42,10 +42,10 @@
 
   /* ------------- Sub-Companies Bubble ------------- */
   --chub-paper: #fbfaf7;
-  --chub-line: #c7a24a;
+  --chub-line: var(--accent);
   --chub-text: #20242b;
   --chub-sub: #6b7280;
-  --chub-ring: rgba(199, 162, 74, 0.35);
+  --chub-ring: rgba(var(--accent-rgb), 0.35);
   --chub-backdrop: rgba(10, 12, 16, 0.4);
 }
 

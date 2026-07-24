@@ -17,7 +17,7 @@
   justify-content: center;
   cursor: pointer;
   z-index: var(--zee-index-max);
-  box-shadow: 0 0 0 6px var(--chub-ring), 0 10px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 6px var(--chub-ring), 0 10px 24px rgba(var(--pure-black), 0.25);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   animation: chubPulse 2s ease-in-out infinite;
 }
@@ -29,7 +29,7 @@
 
 .bubbleOpen {
   animation: none;
-  box-shadow: 0 0 0 9px var(--chub-ring), 0 10px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 9px var(--chub-ring), 0 10px 24px rgba(var(--pure-black), 0.3);
   transform: translateY(-50%) rotate(360deg);
   transition: transform 0.3s ease;
 }
@@ -138,7 +138,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(199, 162, 74, 0.14);
+  background: rgba(var(--accent-rgb), 0.14);
 }
 
 .cardText {
@@ -188,19 +188,19 @@
   0% {
     box-shadow:
       0 0 0 6px var(--chub-ring),
-      0 10px 24px rgba(0, 0, 0, 0.25);
+      0 10px 24px rgba(var(--pure-black), 0.25);
   }
 
   50% {
     box-shadow:
-      0 0 0 14px rgba(199, 162, 74, 0.18),
-      0 10px 30px rgba(0, 0, 0, 0.3);
+      0 0 0 14px rgba(var(--accent-rgb), 0.18),
+      0 10px 30px rgba(var(--pure-black), 0.3);
   }
 
   100% {
     box-shadow:
       0 0 0 6px var(--chub-ring),
-      0 10px 24px rgba(0, 0, 0, 0.25);
+      0 10px 24px rgba(var(--pure-black), 0.25);
   }
 }
 
