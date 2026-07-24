@@ -26,6 +26,20 @@
   --b-border-radius: 12px;
   --z-border-radius: 10000px;
 
+  /* ------------- Company Accent Colors ------------- */
+  --company-auto: #e53935;
+  --company-auto-rgb: 229, 57, 53;
+  --company-solar: #f5a623;
+  --company-solar-rgb: 245, 166, 35;
+  --company-distribution: #7ed321;
+  --company-distribution-rgb: 126, 211, 33;
+  --company-logistics: var(--accent2);
+  --company-logistics-rgb: var(--accent2-rgb);
+  --company-telecom: #bd10e0;
+  --company-telecom-rgb: 189, 16, 224;
+  --company-tech: #14b8a6;
+  --company-tech-rgb: 20, 184, 166;
+
   /* ------------- Sub-Companies Bubble ------------- */
   --chub-paper: #fbfaf7;
   --chub-line: #c7a24a;

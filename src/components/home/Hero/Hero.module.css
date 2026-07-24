@@ -14,8 +14,8 @@
   position: fixed;
   inset: 0;
   background-image:
-    linear-gradient(rgba(0, 212, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 212, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(var(--accent-rgb), 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--accent-rgb), 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   pointer-events: none;
   z-index: 0;
@@ -32,14 +32,14 @@
 .blob1 {
   width: 600px;
   height: 600px;
-  background: rgba(0, 212, 255, 0.07);
+  background: rgba(var(--accent-rgb), 0.07);
   top: -200px;
   left: -100px;
 }
 .blob2 {
   width: 400px;
   height: 400px;
-  background: rgba(255, 107, 53, 0.06);
+  background: rgba(var(--accent2-rgb), 0.06);
   bottom: -100px;
   right: 200px;
 }
@@ -127,7 +127,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(var(--pure-white), 0.15);
   transform: translateX(-100%);
   transition: transform 0.3s;
 }
@@ -135,7 +135,7 @@
   transform: translateX(0);
 }
 .btnPrimary:hover {
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.4);
   &>svg{
     transition: translate 0.1s;
     translate: 5px 0;
@@ -232,8 +232,8 @@
   text-decoration: none;
   display: block;
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    0 4px 24px rgba(var(--pure-black), 0.3),
+    inset 0 1px 0 rgba(var(--pure-white), 0.08);
 }
 
 /* Top accent bar */
@@ -254,13 +254,13 @@
   transform: scaleX(1);
 }
 .companyCard:hover {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(var(--pure-white), 0.07);
   border-color: color-mix(in srgb, var(--card-accent, var(--accent)) 18%, transparent);
   transform: translateY(-4px);
   box-shadow:
-    0 8px 40px rgba(0, 0, 0, 0.4),
-    0 0 20px var(--card-glow, rgba(0, 212, 255, 0.08)),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 8px 40px rgba(var(--pure-black), 0.4),
+    0 0 20px var(--card-glow, rgba(var(--accent-rgb), 0.08)),
+    inset 0 1px 0 rgba(var(--pure-white), 0.12);
 }
 
 /* Glow bloom on hover */
@@ -268,7 +268,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% -10%, var(--card-glow, rgba(0, 212, 255, 0.09)) 0%, transparent 65%);
+  background: radial-gradient(ellipse at 50% -10%, var(--card-glow, rgba(var(--accent-rgb), 0.09)) 0%, transparent 65%);
   opacity: 0;
   transition: opacity 0.35s;
   border-radius: var(--b-border-radius);
@@ -314,20 +314,20 @@
 }
 
 /* Card accent colours */
-.cardAuto  { --card-accent: #e53935; --card-glow: rgba(229, 57, 53, 0.07); }
-.cardSolar { --card-accent: #f5a623; --card-glow: rgba(245, 166, 35, 0.07); }
-.cardDist  { --card-accent: #7ed321; --card-glow: rgba(126, 211, 33, 0.07); }
-.cardLogi  { --card-accent: #ff6b35; --card-glow: rgba(255, 107, 53, 0.07); }
-.cardTele  { --card-accent: #bd10e0; --card-glow: rgba(189, 16, 224, 0.07); }
-.cardTech  { --card-accent: #14b8a6; --card-glow: rgba(20, 184, 166, 0.07); }
+.cardAuto  { --card-accent: var(--company-auto); --card-glow: rgba(var(--company-auto-rgb), 0.07); }
+.cardSolar { --card-accent: var(--company-solar); --card-glow: rgba(var(--company-solar-rgb), 0.07); }
+.cardDist  { --card-accent: var(--company-distribution); --card-glow: rgba(var(--company-distribution-rgb), 0.07); }
+.cardLogi  { --card-accent: var(--company-logistics); --card-glow: rgba(var(--company-logistics-rgb), 0.07); }
+.cardTele  { --card-accent: var(--company-telecom); --card-glow: rgba(var(--company-telecom-rgb), 0.07); }
+.cardTech  { --card-accent: var(--company-tech); --card-glow: rgba(var(--company-tech-rgb), 0.07); }
 
 /* Chip colours */
-.cardAuto  .chip { background: rgba(229, 57, 53, 0.12); color: #e53935; }
-.cardSolar .chip { background: rgba(245, 166, 35, 0.12); color: #f5a623; }
-.cardDist  .chip { background: rgba(126, 211, 33, 0.12); color: #7ed321; }
-.cardLogi  .chip { background: rgba(255, 107, 53, 0.12); color: #ff6b35; }
-.cardTele  .chip { background: rgba(189, 16, 224, 0.12); color: #bd10e0; }
-.cardTech  .chip { background: rgba(20, 184, 166, 0.12); color: #14b8a6; }
+.cardAuto  .chip { background: rgba(var(--company-auto-rgb), 0.12); color: var(--company-auto); }
+.cardSolar .chip { background: rgba(var(--company-solar-rgb), 0.12); color: var(--company-solar); }
+.cardDist  .chip { background: rgba(var(--company-distribution-rgb), 0.12); color: var(--company-distribution); }
+.cardLogi  .chip { background: rgba(var(--company-logistics-rgb), 0.12); color: var(--company-logistics); }
+.cardTele  .chip { background: rgba(var(--company-telecom-rgb), 0.12); color: var(--company-telecom); }
+.cardTech  .chip { background: rgba(var(--company-tech-rgb), 0.12); color: var(--company-tech); }
 
 .chip {
   display: inline-block;
@@ -354,7 +354,7 @@
   width: 500px;
   height: 500px;
   border-radius: var(--z-border-radius);
-  background: radial-gradient(circle, rgba(0, 212, 255, 0.055) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.055) 0%, transparent 70%);
   pointer-events: none;
   z-index: 2;
   transform: translate(-50%, -50%);
