@@ -122,8 +122,8 @@
 }
 
 .marketSignal {
-  position: sticky;
-  top: 118px;
+  /* position: sticky; */
+  /* top: 118px; */
   align-self: start;
   min-height: 100%;
   border: 1px solid rgba(var(--pure-white), 0.1);
@@ -139,14 +139,14 @@
     inset 0 1px 0 rgba(var(--pure-white), 0.08);
 }
 
-.marketSignal::before {
+/* .marketSignal::before {
   content: "";
   position: absolute;
   inset: 18px;
   border: 1px solid rgba(var(--accent-rgb), 0.18);
   border-radius: calc(var(--b-border-radius) - 4px);
   pointer-events: none;
-}
+} */
 
 .signalKicker {
   display: block;
