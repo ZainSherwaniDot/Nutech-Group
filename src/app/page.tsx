@@ -3,6 +3,7 @@ import Vendors from "@/components/home/Vendors/Vendors";
 import AboutNutechGroup from "@/components/home/AboutNutechGroup/AboutNutechGroup";
 import OurCompanies from "@/components/home/OurCompanies/OurCompanies";
 import IndustriesWeServe from "@/components/home/IndustriesWeServe/IndustriesWeServe";
+import WhyChooseUs from "@/components/home/WhyChooseUs/WhyChooseUs";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <AboutNutechGroup />
       <OurCompanies />
       <IndustriesWeServe />
+      <WhyChooseUs />
     </>
   );
 }
