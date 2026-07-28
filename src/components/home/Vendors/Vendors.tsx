@@ -16,7 +16,7 @@ const VENDORS: Vendor[] = [
   { name: 'HPE',              logo: '/vendor-logos/hpe.avif',             width: 1200,    height: 630 },
   { name: 'Kaspersky',        logo: '/vendor-logos/kaspersky.svg',        width: 1024,    height: 210 },
   { name: 'Red Hat',          logo: '/vendor-logos/red-hat.svg',          width: 555,     height: 175 },
-  { name: 'Microsoft',        logo: '/vendor-logos/microsoft.png',        width: 216,     height: 46 },
+  { name: 'Microsoft',        logo: '/vendor-logos/microsoft.svg',        width: 256,     height: 256.002 },
   { name: 'Rapid7',           logo: '/vendor-logos/rapid7.svg',           width: 841.1,   height: 141.3 },
   { name: 'Cambium Networks', logo: '/vendor-logos/cambium-networks.svg', width: 287.33,  height: 223.54 },
   { name: 'Belkin',           logo: '/vendor-logos/belkin.svg',           width: 101.604, height: 28.77 },
