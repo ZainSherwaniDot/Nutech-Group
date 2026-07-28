@@ -254,16 +254,16 @@ export default function Hero() {
                   <div className={styles.statLabel}>{label}</div>
                 </div>
               ))} */}
-              <Link href={"mailto:info@nutech-group.com"} target="_blank" rel="noopener noreferrer">
-                <div className={styles.emailAndPhone}>
+              <div className={styles.emailAndPhone}>
+                <Link href={"mailto:info@nutech-group.com"} target="_blank" rel="noopener noreferrer">
                   <span><MdEmail /></span>info@nutech-group.com
-                </div>
-              </Link>
-              <Link href={"tel:+971555183349"} target="_blank" rel="noopener noreferrer">
-                <div className={styles.emailAndPhone}>
+                </Link>
+              </div>
+              <div className={styles.emailAndPhone}>
+                <Link href={"tel:+971555183349"} target="_blank" rel="noopener noreferrer">
                   <span><FaPhoneAlt /></span>+971555183349
-                </div>
-              </Link>
+                </Link>
+              </div>
               <div className={styles.socials}>
                 <Link href="https://www.facebook.com/profile.php?id=61573981977505" target="_blank" rel="noopener noreferrer"><FaFacebook size={23} /></Link>
                 <Link href="https://www.instagram.com/nutechgroupllc/" target="_blank" rel="noopener noreferrer"><FaInstagram size={23} /></Link>
