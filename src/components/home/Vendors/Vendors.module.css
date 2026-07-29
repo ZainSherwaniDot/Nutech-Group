@@ -5,6 +5,7 @@
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background-color: white;
+  border-radius: var(--z-border-radius);
 }
 
 .tickerTrack {
