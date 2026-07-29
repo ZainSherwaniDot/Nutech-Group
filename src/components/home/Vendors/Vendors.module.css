@@ -28,8 +28,8 @@
 }
 
 .logo {
+  height: 50px;
   width: auto;
-  height: 64px;
   object-fit: contain;
   transition: transform 0.25s ease;
 }

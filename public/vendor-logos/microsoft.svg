@@ -1,1 +1,94 @@
-<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" width="256" height="256" preserveAspectRatio="xMidYMid"><path fill="#F1511B" d="M121.666 121.666H0V0h121.666z"/><path fill="#80CC28" d="M256 121.666H134.335V0H256z"/><path fill="#00ADEF" d="M121.663 256.002H0V134.336h121.663z"/><path fill="#FBBC09" d="M256 256.002H134.335V134.336H256z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="13.229167mm"
+   height="13.229167mm"
+   viewBox="0 0 13.229167 13.229167"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="Nutech-Group\public\vendor-logos\apple.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#1e1e1e"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="false"
+     inkscape:deskcolor="#1e1e1e"
+     inkscape:document-units="mm"
+     showborder="false"
+     inkscape:zoom="0.75110017"
+     inkscape:cx="16524.427"
+     inkscape:cy="36875.907"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"><inkscape:page
+       x="0"
+       y="0"
+       width="13.229167"
+       height="13.229167"
+       id="page2"
+       margin="0"
+       bleed="0" /></sodipodi:namedview><defs
+     id="defs1"><style
+       id="style1">
+      .cls-1 {
+        fill: none;
+      }
+    </style><style
+       id="style1-5">.b555f035-ddb7-45c4-a3cc-c93e6b76b4cf{fill:#e00;}</style></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-596.9181,-3219.5491)"><g
+       id="g119"
+       transform="translate(0,8.218182e-5)"><rect
+         style="fill:#ffffff;stroke-width:1.18919;stroke-linecap:round;stroke-linejoin:round"
+         id="rect96"
+         width="13.229167"
+         height="13.229167"
+         x="596.91821"
+         y="3219.5496"
+         ry="2.6458333" /><g
+         id="g117"
+         transform="matrix(0.04134082,0,0,0.04134082,598.24114,3220.8726)"><path
+           fill="#f1511b"
+           d="M 121.666,121.666 H 0 V 0 h 121.666 z"
+           id="path1-0" /><path
+           fill="#80cc28"
+           d="M 256,121.666 H 134.335 V 0 H 256 Z"
+           id="path2-8" /><path
+           fill="#00adef"
+           d="M 121.663,256.002 H 0 V 134.336 h 121.663 z"
+           id="path3-3" /><path
+           fill="#fbbc09"
+           d="M 256,256.002 H 134.335 V 134.336 H 256 Z"
+           id="path4-9" /></g></g></g><style
+     type="text/css"
+     id="style1-7">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:#FFFFFF;}
+	.st3{display:inline;fill:#FFFFFF;}
+	.st4{fill:#231F20;}
+	.st5{clip-path:url(#SVGID_2_);fill:#231F20;}
+	.st6{fill:#003D79;}
+	.st7{display:inline;fill:#231F20;}
+	.st8{clip-path:url(#SVGID_4_);fill:#231F20;}
+	.st9{display:inline;fill:#003D79;}
+	.st10{clip-path:url(#SVGID_6_);fill:#003D79;}
+	.st11{clip-path:url(#SVGID_6_);fill:#FFFFFF;}
+</style></svg>
