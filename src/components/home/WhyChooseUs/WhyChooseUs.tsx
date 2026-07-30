@@ -23,7 +23,7 @@ const REASONS: Reason[] = [
   {
     icon: Handshake,
     title: "Founder-led experience",
-    text: "Nutech Group is new, but its direction is shaped by founders with decades of industry relationships and operating judgment.",
+    text: "The direction of Nutech Group is shaped by founders with decades of industry relationships and operating judgment.",
     tone: "toneFounder",
   },
   {
@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
           <span className={styles.panelKicker}>Credibility snapshot</span>
           <h3>Built to earn trust from the first engagement.</h3>
           <p>
-            The group is young, but it is not starting from zero. Its strength
+            Nutech Group is built on decades of versatile experience. Our strength
             comes from experienced leadership, specialized companies, and the
             discipline to keep execution practical.
           </p>
