@@ -2,7 +2,9 @@
   width: calc(100% - 2rem);
   max-width: 1920px;
   box-sizing: border-box;
-  margin: 96px auto 16px;
+  /* margin: 96px auto 16px; */
+  margin-top: 0px !important;
+  margin-inline: auto;
   padding: 58px 60px 22px;
 }
 
@@ -211,10 +213,17 @@
 }
 
 .landHighlight {
-  fill: rgba(var(--accent-rgb), 0.18);
+  fill: rgba(var(--accent-rgb), 0.16);
   stroke: rgba(var(--accent-rgb), 0.55);
   stroke-width: 1.4;
   filter: drop-shadow(0 0 12px rgba(var(--accent-rgb), 0.28));
+}
+
+.boundaryLine {
+  fill: none;
+  stroke: rgba(var(--pure-white), 0.22);
+  stroke-width: 1;
+  stroke-linecap: round;
 }
 
 .routeLine {
@@ -244,6 +253,12 @@
   fill: var(--accent);
   stroke: rgba(var(--pure-white), 0.88);
   stroke-width: 1.2;
+}
+
+.pinLeader {
+  stroke: rgba(var(--accent-rgb), 0.46);
+  stroke-width: 1;
+  stroke-linecap: round;
 }
 
 .mapPin text {

@@ -97,8 +97,8 @@ export default function Footer() {
             >
               <title id="mea-map-title">Map highlighting Middle East and Africa focus markets</title>
               <desc id="mea-map-desc">
-                A stylized regional map with highlighted Africa and Middle East
-                areas and markers for representative MEA countries.
+                A stylized outline map of Africa and the Middle East with
+                markers for representative MEA countries.
               </desc>
 
               <path
@@ -112,67 +112,111 @@ export default function Footer() {
 
               <path
                 className={styles.landMuted}
-                d="M192 88C226 56 302 48 350 72C378 86 390 112 372 132C336 172 244 164 200 136C178 122 174 106 192 88Z"
+                d="M82 58C140 30 224 32 295 50C327 58 348 76 342 94C300 101 256 94 219 103C172 115 126 105 91 88C72 79 66 66 82 58Z"
               />
               <path
                 className={styles.landMuted}
-                d="M392 64C454 40 528 58 570 104C592 128 584 156 546 168C492 184 418 162 390 122C374 98 376 76 392 64Z"
+                d="M374 62C435 38 520 54 580 94C604 110 599 137 570 151C520 176 456 159 424 130C401 109 368 94 356 76C352 70 359 66 374 62Z"
               />
 
               <path
                 className={styles.landHighlight}
-                d="M244 108C280 91 323 100 346 129C366 154 369 193 352 226L329 271C313 303 274 316 246 292C225 274 222 240 202 221C181 201 147 194 143 162C139 132 178 112 210 119C225 122 231 114 244 108Z"
+                d="M111 91C139 70 178 61 223 61C256 61 286 67 309 80C332 93 345 111 343 132C342 144 335 151 330 158C352 153 377 159 398 171C376 183 358 194 350 216C340 243 321 266 302 290C288 309 279 332 248 330C218 328 198 306 191 279C184 256 168 245 145 242C117 238 93 221 84 194C76 170 83 145 95 123C101 112 101 99 111 91Z"
               />
               <path
                 className={styles.landHighlight}
-                d="M371 126C398 116 431 125 448 148L482 193C491 205 486 222 472 228L433 244C416 251 397 241 392 223L382 186C376 166 355 154 360 139C362 133 366 129 371 126Z"
+                d="M357 101C374 91 395 93 408 108L437 115C464 123 487 147 493 171C500 194 486 216 458 225L414 235C392 240 371 221 372 198L377 178C369 163 350 151 344 132C339 118 342 107 357 101Z"
               />
               <path
                 className={styles.landHighlight}
-                d="M337 103C359 94 387 99 402 118C415 134 409 154 388 160C366 166 337 155 329 136C323 122 326 108 337 103Z"
+                d="M386 129L432 123C453 128 474 147 482 169L465 214L417 225L379 180L369 153L386 129Z"
+              />
+              <path
+                className={styles.landHighlight}
+                d="M385 247C397 263 404 286 395 307C388 324 371 318 372 297C373 276 377 258 385 247Z"
+              />
+              <path
+                className={styles.boundaryLine}
+                d="M338 128C345 150 362 164 377 178"
+              />
+              <path
+                className={styles.boundaryLine}
+                d="M344 132C330 140 313 139 296 132"
               />
 
               <path
                 className={styles.routeLine}
-                d="M440 178C398 164 358 159 317 171C276 183 242 213 214 250"
+                d="M456 166C398 165 331 178 257 205C224 217 202 224 181 204"
               />
               <path
                 className={styles.routeLine}
-                d="M440 178C399 138 352 122 291 126"
+                d="M456 166C405 207 352 244 252 312"
+              />
+              <path
+                className={styles.routeLine}
+                d="M456 166C395 130 350 116 317 125"
               />
 
-              <g className={styles.mapPin} transform="translate(438 178)">
+              <g className={styles.mapPin} transform="translate(456 166)">
                 <circle className={styles.pinHalo} r="13" />
                 <circle className={styles.pinDot} r="4" />
-                <text x="17" y="4">UAE</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="34" y2="24" />
+                <text x="40" y="29">UAE</text>
               </g>
-              <g className={styles.mapPin} transform="translate(405 180)">
+              <g className={styles.mapPin} transform="translate(407 169)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="10" y="19">KSA</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="-44" y2="10" />
+                <text x="-50" y="14" textAnchor="end">Saudi Arabia</text>
               </g>
-              <g className={styles.mapPin} transform="translate(386 139)">
+              <g className={styles.mapPin} transform="translate(440 157)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="10" y="-7">Jordan</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="46" y2="6" />
+                <text x="52" y="10">Qatar</text>
               </g>
-              <g className={styles.mapPin} transform="translate(326 145)">
+              <g className={styles.mapPin} transform="translate(462 194)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="-45" y="-8">Egypt</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="40" y2="30" />
+                <text x="46" y="35">Oman</text>
               </g>
-              <g className={styles.mapPin} transform="translate(219 137)">
+              <g className={styles.mapPin} transform="translate(423 134)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="-58" y="-2">Morocco</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="42" y2="-20" />
+                <text x="48" y="-18">Kuwait</text>
               </g>
-              <g className={styles.mapPin} transform="translate(242 219)">
+              <g className={styles.mapPin} transform="translate(435 146)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="-50" y="18">Nigeria</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="48" y2="-7" />
+                <text x="54" y="-4">Bahrain</text>
               </g>
-              <g className={styles.mapPin} transform="translate(315 238)">
+              <g className={styles.mapPin} transform="translate(363 118)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="11" y="5">Kenya</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="22" y2="-22" />
+                <text x="28" y="-23">Jordan</text>
               </g>
-              <g className={styles.mapPin} transform="translate(291 300)">
+              <g className={styles.mapPin} transform="translate(317 125)">
                 <circle className={styles.pinDot} r="4" />
-                <text x="12" y="5">South Africa</text>
+                <line className={styles.pinLeader} x1="0" y1="0" x2="-34" y2="-20" />
+                <text x="-40" y="-21" textAnchor="end">Egypt</text>
+              </g>
+              <g className={styles.mapPin} transform="translate(128 102)">
+                <circle className={styles.pinDot} r="4" />
+                <line className={styles.pinLeader} x1="0" y1="0" x2="-26" y2="-18" />
+                <text x="-32" y="-19" textAnchor="end">Morocco</text>
+              </g>
+              <g className={styles.mapPin} transform="translate(181 204)">
+                <circle className={styles.pinDot} r="4" />
+                <line className={styles.pinLeader} x1="0" y1="0" x2="-30" y2="22" />
+                <text x="-36" y="27" textAnchor="end">Nigeria</text>
+              </g>
+              <g className={styles.mapPin} transform="translate(330 230)">
+                <circle className={styles.pinDot} r="4" />
+                <line className={styles.pinLeader} x1="0" y1="0" x2="28" y2="18" />
+                <text x="34" y="23">Kenya</text>
+              </g>
+              <g className={styles.mapPin} transform="translate(252 312)">
+                <circle className={styles.pinDot} r="4" />
+                <line className={styles.pinLeader} x1="0" y1="0" x2="28" y2="18" />
+                <text x="34" y="23">South Africa</text>
               </g>
             </svg>
           </div>
