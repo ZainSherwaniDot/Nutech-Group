@@ -1,0 +1,232 @@
+/* ── ABOUT SECTION ── */
+.aboutSection {
+  position: relative;
+  z-index: 8;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  padding: 108px 60px;
+}
+
+.aboutContainer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* ── HEADER ── */
+.headerBlock {
+  margin-bottom: 54px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin-bottom: 20px;
+  color: var(--company-auto);
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--company-auto);
+}
+
+.title {
+  max-width: 840px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: var(--text);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(58px, 6vw, 104px);
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: 1px;
+}
+
+.intro {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* ── ABOUT GRID ── */
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.aboutCard {
+  position: relative;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: var(--b-border-radius);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.aboutCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--company-auto);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.aboutCard:hover {
+  background: rgba(var(--company-auto-rgb), 0.08);
+  border-color: var(--company-auto);
+  transform: translateY(-4px);
+}
+
+.aboutCard:hover::before {
+  transform: scaleX(1);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cardIcon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.cardText {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── STATS GRID ── */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding-top: 54px;
+  border-top: 1px solid var(--border);
+}
+
+.statItem {
+  position: relative;
+  padding: 32px;
+  text-align: center;
+  background: linear-gradient(135deg, 
+    rgba(var(--company-auto-rgb), 0.08) 0%, 
+    rgba(var(--company-auto-rgb), 0.04) 100%);
+  border: 1px solid rgba(var(--company-auto-rgb), 0.2);
+  border-radius: var(--b-border-radius);
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  background: linear-gradient(135deg, 
+    rgba(var(--company-auto-rgb), 0.15) 0%, 
+    rgba(var(--company-auto-rgb), 0.08) 100%);
+  border-color: var(--company-auto);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 34px rgba(var(--company-auto-rgb), 0.1);
+}
+
+.statNumber {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--company-auto);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 1180px) {
+  .aboutSection {
+    padding: 96px 42px;
+  }
+
+  .aboutGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .aboutSection {
+    padding: 78px 24px;
+  }
+
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .statItem {
+    padding: 24px;
+  }
+
+  .statNumber {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 520px) {
+  .aboutSection {
+    padding: 64px 18px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

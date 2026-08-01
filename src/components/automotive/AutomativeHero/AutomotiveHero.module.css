@@ -1,0 +1,287 @@
+/* ── HERO SECTION ── */
+.heroSection {
+  position: relative;
+  z-index: 5;
+  min-height: calc(100vh - 90px);
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  overflow: hidden;
+}
+
+/* Background decoration blobs */
+.bgBlob1 {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: rgba(var(--company-auto-rgb), 0.08);
+  border-radius: 10000px;
+  filter: blur(120px);
+  top: -200px;
+  left: -100px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bgBlob2 {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: rgba(var(--accent-rgb), 0.06);
+  border-radius: 10000px;
+  filter: blur(120px);
+  bottom: -100px;
+  right: 200px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── HERO CONTAINER ── */
+.heroContainer {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 60px 100px;
+  align-items: center;
+}
+
+/* ── LEFT SIDE ── */
+.heroLeft {
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--company-auto);
+  margin-bottom: 28px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: var(--company-auto);
+}
+
+.heroTitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(64px, 7vw, 110px);
+  line-height: 0.92;
+  letter-spacing: 1px;
+  color: var(--text);
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.accentLine {
+  display: block;
+  -webkit-text-stroke: 3px var(--company-auto);
+  color: transparent;
+}
+
+.heroDesc {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 420px;
+  margin-bottom: 48px;
+}
+
+/* ── BUTTONS ── */
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--company-auto);
+  color: var(--bg);
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 16px 36px;
+  border: none;
+  border-radius: var(--a-border-radius);
+  cursor: pointer;
+  transition: all 0.25s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btnPrimary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.btnPrimary:hover::after {
+  transform: translateX(0);
+}
+
+.btnPrimary:hover {
+  box-shadow: 0 0 30px rgba(var(--company-auto-rgb), 0.4);
+}
+
+.btnPrimary:hover svg {
+  translate: 5px 0;
+}
+
+.btnPrimary svg {
+  transition: translate 0.1s;
+}
+
+.btnSecondary {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.btnSecondary:hover {
+  color: var(--text);
+}
+
+/* ── CONTACT DETAILS ── */
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border);
+}
+
+.contactDetails svg {
+  transition: color 0.2s;
+}
+
+.emailAndPhone {
+  display: flex;
+  place-content: start;
+}
+
+.emailAndPhone a {
+  display: flex;
+  gap: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 23px;
+  line-height: 1;
+  color: var(--text);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.emailAndPhone a span {
+  color: var(--company-auto);
+}
+
+.emailAndPhone a:hover {
+  color: var(--company-auto);
+}
+
+.emailAndPhone a:hover svg {
+  color: var(--company-auto);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.socials a {
+  color: var(--text);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color: var(--company-auto);
+}
+
+/* ── RIGHT SIDE – Image ── */
+.heroRight {
+  animation: fadeUp 0.8s 0.4s ease both;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroContainer {
+    padding: 40px 20px;
+  }
+
+  .heroTitle {
+    font-size: 60px;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .heroDesc {
+    font-size: 14px;
+  }
+}
