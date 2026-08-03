@@ -4,7 +4,7 @@ import AboutNutechGroup from "@/components/home/AboutNutechGroup/AboutNutechGrou
 import OurCompanies from "@/components/home/OurCompanies/OurCompanies";
 import IndustriesWeServe from "@/components/home/IndustriesWeServe/IndustriesWeServe";
 import WhyChooseUs from "@/components/home/WhyChooseUs/WhyChooseUs";
-import FinalCTA from "@/components/home/FinalCTA/FinalCTA";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
 
 export default function HomePage() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, Phone, Send, Sparkles } from "lucide-react";
+import { Mail, MapPin, Phone, Send, Sparkles } from "lucide-react";
 import { subCompanies } from "@/data/companies";
 import styles from "./FinalCTA.module.css";
 
