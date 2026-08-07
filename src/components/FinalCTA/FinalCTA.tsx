@@ -6,9 +6,38 @@ import styles from "./FinalCTA.module.css";
 const CONTACT_EMAIL = "info@nutech-group.com";
 const CONTACT_PHONE = "+971555183349";
 
-export default function FinalCTA() {
+const finalCtaThemes = {
+  main: "main",
+  automotive: "automotive",
+  auto: "automotive",
+  solar: "solar",
+  distribution: "distribution",
+  dist: "distribution",
+  logistics: "logistics",
+  logi: "logistics",
+  telecom: "telecom",
+  tele: "telecom",
+  technology: "tech",
+  tech: "tech",
+  technologies: "tech",
+} as const;
+
+export type FinalCTATheme = keyof typeof finalCtaThemes;
+type FinalCTAThemeInput = FinalCTATheme | (string & {});
+
+interface FinalCTAProps {
+  theme?: FinalCTAThemeInput;
+}
+
+export default function FinalCTA({ theme = "main" }: FinalCTAProps) {
+  const activeTheme = finalCtaThemes[theme as FinalCTATheme] ?? "main";
+
   return (
-    <section className={styles.mainCTA} aria-labelledby="final-cta-title">
+    <section
+      className={styles.mainCTA}
+      data-theme={activeTheme}
+      aria-labelledby="final-cta-title"
+    >
       <div className={styles.copyColumn}>
         <p className={styles.eyebrow}>Start The Conversation</p>
 
