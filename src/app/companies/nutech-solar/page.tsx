@@ -1,9 +1,10 @@
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import NutechSolar from "@/components/companies/NutechSolar/NutechSolar";
 
 export default function NutechSolarPage() {
   return (
     <>
-      This is the Nutech Solar page.
+      <NutechSolar />
       <FinalCTA theme="solar" />
     </>
   );
