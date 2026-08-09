@@ -29,6 +29,8 @@ type Step = {
   text: string;
 };
 
+const automotiveCompany = subCompanies.find(({ id }) => id === "auto") ?? subCompanies[0];
+
 const CAPABILITIES: Feature[] = [
   {
     icon: Wrench,
@@ -141,7 +143,7 @@ export default function NutechAutomotive() {
             <span className={styles.logoWrap}>
               <Image src="/icon.png" alt="Nutech Group icon" width={62} height={62} priority />
               <span className={styles.logoBadge} aria-hidden="true">
-                {subCompanies[0].icon}
+                {automotiveCompany.icon}
               </span>
             </span>
             <span className={styles.companyChip}>Automotive</span>
