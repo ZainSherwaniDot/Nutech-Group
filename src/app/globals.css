@@ -46,7 +46,7 @@
   --chub-text: #20242b;
   --chub-sub: #6b7280;
   --chub-ring: rgba(var(--accent-rgb), 0.35);
-  --chub-backdrop: rgba(10, 12, 16, 0.4);
+  --chub-backdrop: rgba(10, 12, 16, 0.7);
 }
 
 @theme inline {
