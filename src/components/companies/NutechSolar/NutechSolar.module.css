@@ -223,7 +223,7 @@
   color: var(--solar-strong);
   font-size: 20px;
   line-height: 1;
-  padding-bottom: 2px;
+  padding: 1px 0px 2px 1px;
 }
 
 .companyChip {
