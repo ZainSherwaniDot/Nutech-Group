@@ -162,8 +162,9 @@
   transform: translateY(0);
   animation: snapshotFloat 5.8s ease-in-out infinite;
   will-change: transform;
-  &:hover{
+  &:hover, &:focus-visible{
     border-color: rgba(var(--accent-rgb), 0.45);
+    animation-play-state: paused;
   }
 }
 

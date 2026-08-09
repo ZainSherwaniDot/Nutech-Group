@@ -200,6 +200,7 @@
   box-shadow:
     0 0 36px rgba(var(--auto-rgb), 0.16),
     inset 0 1px 0 rgba(var(--pure-white), 0.08);
+  animation: logoFloat 5.8s ease-in-out infinite;
 }
 
 .logoBadge {
@@ -214,10 +215,13 @@
   border: 1px solid rgba(var(--auto-rgb), 0.4);
   border-radius: var(--z-border-radius);
   background: var(--foreground);
-  color: var(--auto-accent);
   box-shadow:
     0 0 18px rgba(var(--auto-rgb), 0.3),
     inset 0 1px 0 rgba(var(--pure-white), 0.78);
+  color: var(--auto-accent);
+  font-size: 20px;
+  line-height: 1;
+  padding-bottom: 3px;
 }
 
 .companyChip {
@@ -570,6 +574,17 @@
   border-color: rgba(var(--group-rgb), 0.24);
   background: rgba(var(--group-rgb), 0.1);
   color: var(--accent-for-white-background);
+}
+
+@keyframes logoFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
 }
 
 @media (max-width: 1180px) {

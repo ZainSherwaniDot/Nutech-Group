@@ -4,7 +4,6 @@ import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Boxes,
-  CarFront,
   ClipboardCheck,
   Gauge,
   Handshake,
@@ -15,6 +14,7 @@ import {
   Truck,
   Wrench,
 } from "lucide-react";
+import { subCompanies } from "@/data/companies";
 import styles from "./NutechAutomotive.module.css";
 
 type Feature = {
@@ -141,7 +141,7 @@ export default function NutechAutomotive() {
             <span className={styles.logoWrap}>
               <Image src="/icon.png" alt="Nutech Group icon" width={62} height={62} priority />
               <span className={styles.logoBadge} aria-hidden="true">
-                <CarFront size={18} strokeWidth={2} />
+                {subCompanies[0].icon}
               </span>
             </span>
             <span className={styles.companyChip}>Automotive</span>
