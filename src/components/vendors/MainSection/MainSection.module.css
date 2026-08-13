@@ -281,7 +281,6 @@
 }
 
 .categorySection,
-.marqueeSection,
 .directorySection,
 .processSection,
 .groupSection {
@@ -423,10 +422,6 @@
   color: var(--background);
   font-size: 12px;
   line-height: 1.6;
-}
-
-.marqueeSection {
-  padding-top: 24px;
 }
 
 .directorySection {
@@ -643,7 +638,6 @@
   }
 
   .categorySection,
-  .marqueeSection,
   .directorySection,
   .processSection,
   .groupSection {
@@ -690,7 +684,6 @@
   }
 
   .categorySection,
-  .marqueeSection,
   .directorySection,
   .processSection,
   .groupSection {
@@ -746,7 +739,6 @@
   }
 
   .categorySection,
-  .marqueeSection,
   .directorySection,
   .processSection,
   .groupSection {

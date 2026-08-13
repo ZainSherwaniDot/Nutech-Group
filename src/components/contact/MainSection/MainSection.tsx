@@ -159,8 +159,8 @@ export default function MainSection() {
           <p className={styles.blockKicker}>Company-specific inquiry</p>
           <h2 id="company-contact-title">Looking for a specific Nutech company?</h2>
           <p>
-            Jump straight to the company page if your requirement is already
-            tied to one business area.
+            Choose the relevant company if your requirement is already tied to
+            one business area.
           </p>
           <div className={styles.companyLinks}>
             {subCompanies.map(({ id, name, hrefLink }) => (

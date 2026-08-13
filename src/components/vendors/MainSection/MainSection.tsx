@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import { subCompanies } from "@/data/companies";
 import { vendorCategories, vendorCategoryList, vendors, type VendorCategoryId } from "@/data/vendors";
-import Vendors from "@/components/home/Vendors/Vendors";
 import styles from "./MainSection.module.css";
 
 type ProcessStep = {
@@ -137,9 +136,8 @@ export default function MainSection() {
           </div>
 
           <p className={styles.visualNote}>
-            The goal is not to throw a catalog at the customer. It is to
-            understand the requirement, choose the right lane, and coordinate
-            the next step with clarity.
+            A focused vendor network helps teams identify the right lane,
+            compare options, and coordinate the next step with clarity.
           </p>
         </aside>
       </section>
@@ -147,11 +145,11 @@ export default function MainSection() {
       <section className={styles.categorySection} aria-labelledby="category-title">
         <div className={styles.sectionHeader}>
           <p className={styles.eyebrow}>Solution Lanes</p>
-          <h2 id="category-title">Vendor coverage organized around how customers actually buy.</h2>
+          <h2 id="category-title">Organized around the way enterprise teams source solutions.</h2>
           <p>
-            The same brand can matter differently depending on the project. We
-            group the ecosystem by use case so customers can quickly understand
-            where each vendor relationship fits.
+            Each lane connects a customer requirement to the right category of
+            technology, from workplace hardware and networking to cybersecurity,
+            cloud platforms, and data resilience.
           </p>
         </div>
 
@@ -175,27 +173,14 @@ export default function MainSection() {
         </div>
       </section>
 
-      <section className={styles.marqueeSection} aria-labelledby="ticker-title">
-        <div className={styles.sectionHeader}>
-          <p className={styles.eyebrow}>At A Glance</p>
-          <h2 id="ticker-title">A moving view of the vendor ecosystem.</h2>
-          <p>
-            The homepage ticker becomes more useful here as a quick scan before
-            the full directory below.
-          </p>
-        </div>
-
-        <Vendors />
-      </section>
-
       <section className={styles.directorySection} aria-labelledby="directory-title">
         <div className={styles.sectionHeader}>
           <p className={styles.eyebrow}>Vendor Directory</p>
-          <h2 id="directory-title">Brands connected to Nutech Group solution lanes.</h2>
+          <h2 id="directory-title">Trusted brands across the Nutech Group ecosystem.</h2>
           <p>
-            Each card shows the practical fit of the brand inside the wider
-            Nutech ecosystem, from product supply to security, cloud, data, and
-            connectivity projects.
+            The directory brings together brands used across product supply,
+            cybersecurity, cloud, data protection, networking, and workplace
+            infrastructure.
           </p>
         </div>
 
@@ -220,11 +205,11 @@ export default function MainSection() {
       <section className={styles.processSection} aria-labelledby="process-title">
         <div className={styles.sectionHeader}>
           <p className={styles.eyebrow}>How We Coordinate</p>
-          <h2 id="process-title">A vendor page should help customers know what happens next.</h2>
+          <h2 id="process-title">A clear path from requirement to coordinated delivery.</h2>
           <p>
-            This page is not only a logo wall. It explains how a customer moves
-            from a requirement to the right brand lane, group company, and
-            coordination path.
+            Our teams align customer requirements with the right vendor lane,
+            group company, and supply path so the conversation moves with
+            clarity from the first discussion.
           </p>
         </div>
 
@@ -244,7 +229,7 @@ export default function MainSection() {
       <section className={styles.groupSection} aria-labelledby="group-title">
         <div>
           <p className={styles.eyebrow}>Where Vendors Connect</p>
-          <h2 id="group-title">The vendor ecosystem plugs into multiple Nutech companies.</h2>
+          <h2 id="group-title">The vendor ecosystem connects across Nutech companies.</h2>
         </div>
 
         <div className={styles.groupLinks}>
