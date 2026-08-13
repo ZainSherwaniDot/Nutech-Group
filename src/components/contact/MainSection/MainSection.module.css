@@ -1,7 +1,6 @@
 .mainContact {
   position: relative;
   z-index: 8;
-  /* margin-top: 96px; */
   border-radius: var(--b-border-radius);
   padding: 78px 60px 58px;
   overflow: hidden;
