@@ -1,9 +1,10 @@
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import NutechTechnologies from "@/components/companies/NutechTechnologies/NutechTechnologies";
 
 export default function NutechTechnologiesPage() {
   return (
     <>
-      This is the Nutech Technologies page.
+      <NutechTechnologies />
       <FinalCTA theme="technologies" />
     </>
   );
