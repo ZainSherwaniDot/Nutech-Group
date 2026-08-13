@@ -1,9 +1,10 @@
 import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import NutechTelecom from "@/components/companies/NutechTelecom/NutechTelecom";
 
 export default function NutechTelecomPage() {
   return (
     <>
-      This is the Nutech Telecom page.
+      <NutechTelecom />
       <FinalCTA theme="telecom" />
     </>
   );
