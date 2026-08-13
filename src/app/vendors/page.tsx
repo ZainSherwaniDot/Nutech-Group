@@ -1,7 +1,11 @@
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
+import MainSection from "@/components/vendors/MainSection/MainSection";
+
 export default function VendorsPage() {
   return (
     <>
-      This is the Vendors page.
+      <MainSection />
+      <FinalCTA />
     </>
   );
 }
