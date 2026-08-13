@@ -1,7 +1,11 @@
+import MainSection from "@/components/blog/MainSection/MainSection";
+import FinalCTA from "@/components/FinalCTA/FinalCTA";
+
 export default function BlogPage() {
   return (
     <>
-      This is the Blog page.
+      <MainSection />
+      <FinalCTA />
     </>
   );
 }
