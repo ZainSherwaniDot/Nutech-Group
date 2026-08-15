@@ -282,10 +282,10 @@
 }
 
 .cardIcon {
-  font-size: 28px;
-  margin-bottom: 14px;
-  display: block;
-  filter: grayscale(0.3);
+  width: 35px;
+  height: 35px;
+  margin-top: 5px;
+  margin-bottom: 19px;
 }
 .cardName {
   font-family: 'Bebas Neue', sans-serif;

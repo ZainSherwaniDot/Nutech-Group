@@ -5,7 +5,7 @@ export default function MainSection() {
   return (
     <section className={styles.mainCareers}>
       <h1 className={styles.title}>
-          No blogs yet.😞 But be on the look-out!🤩
+          No blogs yet. But be on the look-out!
       </h1>
       <p>
           You can also follow our{" "}

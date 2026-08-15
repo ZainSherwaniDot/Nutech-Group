@@ -169,20 +169,21 @@
   position: absolute;
   right: -9px;
   bottom: -9px;
-  display: inline-flex;
-  width: 28px;
-  height: 28px;
-  align-items: center;
-  justify-content: center;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  & img{
+    width: 20px;
+    aspect-ratio: 1;
+  }
   border: 1px solid rgba(var(--company-rgb), 0.38);
   border-radius: var(--z-border-radius);
   background: var(--bgDarkPop);
   box-shadow:
     0 0 18px rgba(var(--company-rgb), 0.28),
     inset 0 1px 0 rgba(var(--pure-white), 0.1);
-  color: var(--company-accent);
-  font-size: 16px;
-  line-height: 1;
 }
 
 .industry {

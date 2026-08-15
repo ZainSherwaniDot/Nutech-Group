@@ -242,7 +242,7 @@ export default function MainSection() {
 
             return (
               <Link key={lane.companyId} href={company.hrefLink} className={styles.groupLink}>
-                <span aria-hidden="true">{company.icon}</span>
+                <span aria-hidden="true"><Image src={company.icon} alt="" width={256} height={256} /></span>
                 <div>
                   <h3>{lane.title}</h3>
                   <p>{lane.text}</p>

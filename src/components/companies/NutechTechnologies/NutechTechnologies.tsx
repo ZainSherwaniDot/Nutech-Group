@@ -144,7 +144,7 @@ export default function NutechTechnologies() {
             <span className={styles.logoWrap}>
               <Image src="/icon.png" alt="Nutech Group icon" width={62} height={62} priority />
               <span className={styles.logoBadge} aria-hidden="true">
-                {technologiesCompany.icon}
+                <Image src={technologiesCompany.icon} alt="" width={256} height={256} priority />
               </span>
             </span>
             <span className={styles.companyChip}>Technology</span>

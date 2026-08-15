@@ -38,7 +38,7 @@ export default function OurCompanies() {
                     aria-hidden="true"
                   />
                   <span className={styles.logoBadge} aria-hidden="true">
-                    {icon}
+                    <Image src={icon} alt="" width={256} height={256} />
                   </span>
                 </span>
                 <span className={styles.industry}>{chip}</span>

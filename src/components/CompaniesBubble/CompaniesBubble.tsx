@@ -121,7 +121,7 @@ export default function CompaniesBubble({
                 className={styles.card}
                 onClick={() => setOpen(false)}
               >
-                <span className={styles.cardIcon}>{icon}</span>
+                <span className={styles.cardIcon}><Image src={icon} alt="" width={256} height={256} /></span>
                 <span className={styles.cardText}>
                   <span className={styles.cardTitle}>Nutech {name}</span>
                   <span className={styles.cardDesc}>{sub}</span>

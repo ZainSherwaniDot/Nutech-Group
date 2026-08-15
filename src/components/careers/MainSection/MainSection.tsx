@@ -5,7 +5,7 @@ export default function MainSection() {
   return (
     <section className={styles.mainCareers}>
       <h1 className={styles.title}>
-          We are not hiring right now, but keep checking this page for future opportunities!🤩
+          We are not hiring right now, but keep checking this page for future opportunities!
       </h1>
       <p>
           You can also follow our{" "}

@@ -16,7 +16,7 @@ export interface SubCompany {
 export const subCompanies: SubCompany[] = [
   {
     id: "auto",
-    icon: "🚗",
+    icon: "/sub-company-icons/auto.png",
     chip: "Automotive",
     name: "Automotive",
     sub: "Tools, Equipment & Service Excellence",
@@ -26,7 +26,7 @@ export const subCompanies: SubCompany[] = [
   },
   {
     id: "solar",
-    icon: "☀️",
+    icon: "/sub-company-icons/solar.png",
     chip: "Energy",
     name: "Solar & Power",
     sub: "Renewable Energy Solutions",
@@ -36,7 +36,7 @@ export const subCompanies: SubCompany[] = [
   },
   {
     id: "dist",
-    icon: "📦",
+    icon: "/sub-company-icons/dist.png",
     chip: "Distribution",
     name: "Distribution",
     sub: "Computer Hardware & Consumer Goods",
@@ -46,7 +46,7 @@ export const subCompanies: SubCompany[] = [
   },
   {
     id: "logi",
-    icon: "🚚",
+    icon: "/sub-company-icons/logi.png",
     chip: "Logistics",
     name: "Logistics",
     sub: "Shipping, Exporting & Customs",
@@ -56,7 +56,7 @@ export const subCompanies: SubCompany[] = [
   },
   {
     id: "tele",
-    icon: "📡",
+    icon: "/sub-company-icons/tele.png",
     chip: "Telecom",
     name: "Telecom",
     sub: "Connectivity & Telecommunication Infrastructure",
@@ -66,7 +66,7 @@ export const subCompanies: SubCompany[] = [
   },
   {
     id: "tech",
-    icon: "💻",
+    icon: "/sub-company-icons/tech.png",
     chip: "Technology",
     name: "Technologies",
     sub: "Software Development, Cloud Solutions & AI",

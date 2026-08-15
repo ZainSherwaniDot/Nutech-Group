@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from "next/image";
 import Link from 'next/link';
 import styles from './Hero.module.css';
 import { subCompanies } from "@/data/companies";
@@ -280,7 +281,7 @@ export default function Hero() {
                 href={hrefLink}
                 className={`${styles.companyCard} ${styles[cardClass]}`}
               >
-                <span className={styles.cardIcon}>{icon}</span>
+                <Image className={styles.cardIcon} src={icon} alt="" width={256} height={256} />
                 <div className={styles.chip}>{chip}</div>
                 <div className={styles.cardName}>Nutech<br />{name}</div>
                 <div className={styles.cardSub}>{sub}</div>

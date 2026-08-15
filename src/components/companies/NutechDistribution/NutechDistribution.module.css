@@ -209,21 +209,22 @@
   position: absolute;
   right: -9px;
   bottom: -9px;
-  display: inline-flex;
-  width: 32px;
-  height: 32px;
-  align-items: center;
-  justify-content: center;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  & img{
+    width: 25px;
+    aspect-ratio: 1;
+  }
+  /* padding-bottom: 5px; */
   border: 1px solid rgba(var(--dist-rgb), 0.46);
   border-radius: var(--z-border-radius);
   background: var(--foreground);
   box-shadow:
     0 0 18px rgba(var(--dist-rgb), 0.32),
     inset 0 1px 0 rgba(var(--pure-white), 0.78);
-  color: var(--dist-strong);
-  font-size: 20px;
-  line-height: 1;
-  padding-bottom: 2px;
 }
 
 .companyChip {

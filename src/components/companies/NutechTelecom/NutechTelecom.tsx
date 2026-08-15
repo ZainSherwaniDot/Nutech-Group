@@ -142,7 +142,7 @@ export default function NutechTelecom() {
             <span className={styles.logoWrap}>
               <Image src="/icon.png" alt="Nutech Group icon" width={62} height={62} priority />
               <span className={styles.logoBadge} aria-hidden="true">
-                {telecomCompany.icon}
+                <Image src={telecomCompany.icon} alt="" width={256} height={256} priority />
               </span>
             </span>
             <span className={styles.companyChip}>Telecom</span>

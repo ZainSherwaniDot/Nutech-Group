@@ -139,6 +139,10 @@
   align-items: center;
   justify-content: center;
   background: rgba(var(--accent-rgb), 0.14);
+  & img{
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .cardText {

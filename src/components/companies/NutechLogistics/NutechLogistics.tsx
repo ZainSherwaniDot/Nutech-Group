@@ -142,7 +142,7 @@ export default function NutechLogistics() {
             <span className={styles.logoWrap}>
               <Image src="/icon.png" alt="Nutech Group icon" width={62} height={62} priority />
               <span className={styles.logoBadge} aria-hidden="true">
-                {logisticsCompany.icon}
+                <Image src={logisticsCompany.icon} alt="" width={256} height={256} priority />
               </span>
             </span>
             <span className={styles.companyChip}>Logistics</span>

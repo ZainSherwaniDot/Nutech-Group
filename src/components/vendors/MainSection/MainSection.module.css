@@ -584,8 +584,10 @@
   border: 1px solid rgba(var(--vendor-rgb), 0.24);
   border-radius: var(--z-border-radius);
   background: rgba(var(--vendor-rgb), 0.09);
-  font-size: 22px;
-  line-height: 1;
+  & img{
+    width: 22px;
+    height: 22px;
+  }
 }
 
 .groupLink h3 {
