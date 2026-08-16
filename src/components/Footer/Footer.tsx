@@ -232,8 +232,7 @@ export default function Footer() {
       <div className={styles.footerBottom}>
         <p>&copy; 2026 Nutech Group. All rights reserved.</p>
         <div>
-          <Link href="/contact">Contact</Link>
-          <Link href="/companies">Companies</Link>
+          <Link href="https://ZainSherwani.com" target="_blank" rel="noopener" >Developed by ZainSherwani.com</Link>
         </div>
       </div>
     </footer>
