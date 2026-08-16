@@ -3,7 +3,7 @@
   background: var(--bg);
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
-  min-height: calc(100vh - 90px);
+  /* min-height: calc(100vh - 90px); */
   /* overflow-x: hidden; */
   position: relative;
 }
