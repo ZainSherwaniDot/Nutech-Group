@@ -134,7 +134,8 @@
 }
 
 /* ── Responsive ── */
-/* @media (max-width: 960px) {
-  .nav  { padding: 20px 30px; }
-  .navList { display: none; }
-} */
+@media (max-width: 1150px) {
+  .mainHeader {
+    padding: 0 30px;
+  }
+}
