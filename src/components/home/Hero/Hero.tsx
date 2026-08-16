@@ -235,15 +235,13 @@ export default function Hero() {
             </p>
 
             <div className={styles.heroActions}>
-              <Link href="/companies">
-                <button className={styles.btnPrimary}>
+              <Link href="/companies" className={styles.btnPrimary}>
                   Explore Our Group
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
                     <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
                   </svg>
-                </button>
               </Link>
-              <Link href="#final-cta-section"><button className={styles.btnSecondary}>Talk to an Expert →</button></Link>
+              <Link href="#final-cta-section" className={styles.btnSecondary}>Talk to an Expert →</Link>
             </div>
 
             <div className={styles.contactDetails}>

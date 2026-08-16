@@ -49,7 +49,7 @@ export default function Header() {
           <li><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
-      <Link href="#final-cta-section"><button className={styles.navCta}>Book a Call</button></Link>
+      <Link href="#final-cta-section" className={styles.navCta}>Book a Call</Link>
     </header>
   );
 }
