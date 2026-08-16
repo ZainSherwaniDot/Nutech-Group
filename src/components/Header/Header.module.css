@@ -55,17 +55,17 @@
   text-decoration: none;
   transition: var(--transition-main);
 }
-.navList:has(>li>a:hover){
-  &>li>a:hover{
+.navList:has(>li>a:hover,a:focus-visible,a:active){
+  &>li>a:hover,a:focus-visible,a:active{
     color: var(--accent);
     transition: var(--transition-main);
   }
-  &>li>a:not(:hover){
+  &>li>a:not(:hover,:focus-visible,:active){
     opacity: 0.5;
     transition: var(--transition-main);
   }
 }
-.navList:has(.dropdown:hover)>li:not(.dropdown){
+.navList:has(.dropdown:hover,.dropdown:focus-within)>li:not(.dropdown){
   opacity: 0;
   transition: var(--transition-main);
 }
@@ -91,12 +91,14 @@
   /* opacity: 0; */
   /* transition: var(--transition-main); */
 }
-.dropdown:hover .submenu{
-  /* opacity: 1; */
-  display: block;
-  /* transition: var(--transition-main); */
-  height: 160px;
-  animation: subMenuBounce 0.5s ease;
+.dropdown:hover,.dropdown:focus-within{
+  & .submenu{
+    display: block;
+    height: 160px;
+    animation: subMenuBounce 0.5s ease;
+    /* opacity: 1; */
+    /* transition: var(--transition-main); */
+  }
 }
 @keyframes subMenuBounce {
   0%{
@@ -109,7 +111,7 @@
     height: 160px;
   }
 }
-.submenu a:hover{
+.submenu a:hover, .submenu a:focus-visible{
   color: var(--accent);
   transition: var(--transition-main);
 }
@@ -125,7 +127,7 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-.navCta:hover {
+.navCta:hover, .navCta:focus-visible {
   background: var(--accent);
   color: var(--bg);
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
