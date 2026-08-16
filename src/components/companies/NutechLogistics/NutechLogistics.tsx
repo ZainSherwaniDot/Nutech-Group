@@ -126,12 +126,12 @@ export default function NutechLogistics() {
           </p>
 
           <div className={styles.heroActions}>
-            <Link href="/contact" className={styles.primaryLink}>
-              Discuss a logistics requirement
+            <Link href="#final-cta-section" className={styles.primaryLink}>
+              Discuss a requirement
               <ArrowRight aria-hidden="true" size={16} />
             </Link>
             <Link href="/companies" className={styles.secondaryLink}>
-              View group companies
+              View all companies
               <ArrowRight aria-hidden="true" size={16} />
             </Link>
           </div>

@@ -65,6 +65,10 @@
   }
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   /* cursor: url(./../../public/cursor.svg) 12 12, auto; */
   background: var(--background);

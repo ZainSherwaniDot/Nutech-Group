@@ -34,6 +34,7 @@ export default function FinalCTA({ theme = "main" }: FinalCTAProps) {
 
   return (
     <section
+      id="final-cta-section"
       className={styles.mainCTA}
       data-theme={activeTheme}
       aria-labelledby="final-cta-title"
@@ -94,7 +95,7 @@ export default function FinalCTA({ theme = "main" }: FinalCTAProps) {
             </span>
             <div>
               <p>Project inquiry</p>
-              <h3>Tell us where you want to go next.</h3>
+              <h3>Tell us what you want to do next.</h3>
             </div>
           </div>
 

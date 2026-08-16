@@ -235,7 +235,7 @@ export default function Hero() {
             </p>
 
             <div className={styles.heroActions}>
-              <Link href={"/companies"}>
+              <Link href="/companies">
                 <button className={styles.btnPrimary}>
                   Explore Our Group
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden>
@@ -243,7 +243,7 @@ export default function Hero() {
                   </svg>
                 </button>
               </Link>
-              <button className={styles.btnSecondary}>Talk to an Expert →</button>
+              <Link href="#final-cta-section"><button className={styles.btnSecondary}>Talk to an Expert →</button></Link>
             </div>
 
             <div className={styles.contactDetails}>

@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
             ))}
           </div>
 
-          <Link href="/contact" className={styles.panelLink}>
+          <Link href="#final-cta-section" className={styles.panelLink}>
             Start a conversation
             <ArrowRight aria-hidden="true" size={16} />
           </Link>
