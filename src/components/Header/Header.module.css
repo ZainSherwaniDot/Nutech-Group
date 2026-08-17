@@ -21,17 +21,6 @@
   color: var(--text);
   border-radius: 0px;
 }
-.mainHeaderScrolled{
-  top: 16px;
-  width: calc(100% - 32px);
-  padding: 0px 44px;
-  border: 1px solid transparent;
-  background: rgba(255, 255, 255, 0.1);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  border-radius: var(--b-border-radius);
-}
 
 /* ── NAVBAR ── */
 .nav {
@@ -137,5 +126,93 @@
 @media (max-width: 1150px) {
   .mainHeader {
     padding: 0 30px;
+  }
+}
+
+@media (min-width: 1001px) {
+  .mainHeaderScrolled{
+    top: 16px;
+    width: calc(100% - 32px);
+    padding: 0px 44px;
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border-radius: var(--b-border-radius);
+  }
+
+  .menuButton, .mobileNav {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .mainHeader {
+    height: 72px;
+    padding: 0 20px;
+  }
+  
+  .mainHeaderScrolled {
+    background: var(--bg);
+  }
+
+  .nav,
+  .navCta {
+    display: none;
+  }
+
+  .menuButton svg{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+
+  .mobileNav {
+    position: absolute;
+    /* top: calc(100% + 1px); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    /* box-sizing: border-box; */
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    z-index: calc(var(--zee-index-max) + 1);
+  }
+
+  .mobileMenuClose a {
+    position: relative;
+    height: 19.5px;
+    & svg {
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  .mobileNavList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobileNavList a {
+    display: block;
+    font-size: 13px;
+    line-height: 19.5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .mobileNavList a:hover,
+  .mobileNavList a:focus-visible {
+    color: var(--accent);
   }
 }
