@@ -64,7 +64,7 @@ const ROUTING_STEPS = [
   {
     icon: Clock,
     title: "Expect regular updates",
-    text: "The goal is practical next steps, clear communication, and timely deliveries.",
+    text: "The goal is practical next steps, clear communication, and a satisfied you!",
   },
 ];
 
