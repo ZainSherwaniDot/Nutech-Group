@@ -5,7 +5,7 @@
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   background-color: rgb(var(--pure-white));
-  border-radius: var(--z-border-radius);
+  border-radius: var(--b-border-radius);
 }
 
 .tickerTrack {
@@ -46,5 +46,11 @@
 
   to {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (width < 600px) {
+  .logo{
+    height: 25px;
   }
 }
