@@ -105,6 +105,7 @@
   align-items: center;
   gap: 24px;
 }
+
 .btnPrimary {
   display: inline-flex;
   align-items: center;
@@ -123,6 +124,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .btnPrimary::after {
   content: '';
   position: absolute;
@@ -131,9 +133,11 @@
   transform: translateX(-100%);
   transition: transform 0.3s;
 }
+
 .btnPrimary:hover::after {
   transform: translateX(0);
 }
+
 .btnPrimary:hover {
   box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.4);
   &>svg{
@@ -141,6 +145,7 @@
     translate: 5px 0;
   }
 }
+
 .btnPrimary>svg{
   transition: translate 0.1s;
 }
@@ -157,6 +162,7 @@
   transition: color 0.2s;
   font-family: 'DM Sans', sans-serif;
 }
+
 .btnSecondary:hover {
   color: var(--text);
 }
@@ -178,6 +184,7 @@
     }
   }
 }
+
 .emailAndPhone {
   display: flex;
   place-content: start;
@@ -197,6 +204,7 @@
     }
   }
 }
+
 .socials{
   display: flex;
   gap: 10px;
@@ -254,9 +262,11 @@
   transition: transform 0.35s ease;
   border-radius: var(--b-border-radius) var(--b-border-radius) 0 0;
 }
+
 .companyCard:hover::before {
   transform: scaleX(1);
 }
+
 .companyCard:hover {
   background: rgba(var(--pure-white), 0.07);
   border-color: color-mix(in srgb, var(--card-accent, var(--accent)) 18%, transparent);
@@ -277,6 +287,7 @@
   transition: opacity 0.35s;
   border-radius: var(--b-border-radius);
 }
+
 .companyCard:hover::after {
   opacity: 1;
 }
@@ -287,6 +298,7 @@
   margin-top: 5px;
   margin-bottom: 19px;
 }
+
 .cardName {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 20px;
@@ -295,12 +307,14 @@
   line-height: 1.1;
   margin-bottom: 6px;
 }
+
 .cardSub {
   font-size: 11px;
   color: var(--muted);
   line-height: 1.5;
   letter-spacing: 0.3px;
 }
+
 .cardArrow {
   position: absolute;
   bottom: 18px;
@@ -311,6 +325,7 @@
   transform: translate(-4px, 4px);
   transition: all 0.25s;
 }
+
 .companyCard:hover .cardArrow {
   opacity: 1;
   transform: translate(0, 0);
@@ -377,11 +392,29 @@
 }
 
 /* ── Responsive ── */
+@media (960px < width < 1022px) {
+  .btnPrimary{
+    padding: 16px;
+  }
+}
+
+@media (width < 497px) {
+  .heroActions{
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 960px) {
   .hero { grid-template-columns: 1fr; padding: 60px 30px; }
   .heroRight { grid-template-columns: repeat(3, 1fr); }
 }
+
 @media (max-width: 600px) {
   .heroRight { grid-template-columns: 1fr 1fr; }
   .heroTitle { font-size: 60px; }
+}
+
+@media (max-width: 375px) {
+  .heroRight { grid-template-columns: 1fr; }
 }
