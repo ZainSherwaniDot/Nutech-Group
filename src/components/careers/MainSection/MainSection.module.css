@@ -6,7 +6,7 @@
   place-items: center;
   place-content: center;
   padding: 78px 60px 58px;
-  height: 75dvh;
+  min-height: 75dvh;
   gap: 50px;
   background: var(--foreground);
   color: var(--background);
@@ -28,5 +28,22 @@
   transition: all 0.2s ease-in-out;
   &:hover{
     color: var(--accent);
+  }
+}
+
+@media (width < 800px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (width < 547px) {
+  .mainCareers {
+    gap: 35px;
+    min-height: 50dvh;
+    padding: 78px 30px 58px;
+  }
+  .title {
+    font-size: 30px;
   }
 }
