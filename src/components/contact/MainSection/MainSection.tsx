@@ -58,13 +58,13 @@ const ROUTING_STEPS = [
   },
   {
     icon: Network,
-    title: "We route it clearly",
-    text: "Your inquiry is directed toward the relevant Nutech company or the group team best placed to respond.",
+    title: "Get a clear route",
+    text: "Get aligned with the appropriate company and an adequate team for your specific needs.",
   },
   {
     icon: Clock,
-    title: "We follow through",
-    text: "The goal is practical next steps, clear communication, and the right team involved early.",
+    title: "Expect regular updates",
+    text: "The goal is practical next steps, clear communication, and timely deliveries.",
   },
 ];
 
@@ -138,7 +138,7 @@ export default function MainSection() {
 
       <div className={styles.bottomGrid}>
         <div className={styles.processBlock}>
-          <p className={styles.blockKicker}>What happens next</p>
+          <p className={styles.blockKicker}>Next steps</p>
           <div className={styles.stepList}>
             {ROUTING_STEPS.map(({ icon: Icon, title, text }, index) => (
               <article key={title} className={styles.stepItem}>
