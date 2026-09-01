@@ -85,7 +85,7 @@ export default function Footer() {
         <section className={styles.mapCard} aria-labelledby="footer-map-title">
           <div className={styles.mapHeader}>
             <p>MEA Coverage</p>
-            <h2 id="footer-map-title">Markets we are built to serve.</h2>
+            <h2 id="footer-map-title">Markets we serve.</h2>
           </div>
 
           <div className={styles.mapFrame}>
